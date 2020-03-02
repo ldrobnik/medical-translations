@@ -1,11 +1,11 @@
 import React from 'react';
-// import AnchorLink from 'react-anchor-link-smooth-scroll';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import {
-//     faPhone,
-//     faEnvelope,
-//     faClock
-// } from "@fortawesome/free-solid-svg-icons";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {
+    faPhone,
+    faEnvelope,
+    faClock
+} from "@fortawesome/free-solid-svg-icons";
 
 
 //offset used for smooth scrolling
