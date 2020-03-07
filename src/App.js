@@ -1,27 +1,18 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+//Google Analytics code
+const ANALYTICS_KEY = process.env.REACT_APP_ANALYTICS_KEY; // Google analytics API key
+ReactGA.initialize(ANALYTICS_KEY);
+ReactGA.pageview(window.location.pathname + window.location.search);
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
-}
+};
 
 export default App;
