@@ -25,21 +25,21 @@ const Home = (props) => {
     const containerClass = (props.loaded) ? "" : "constrained";
 
     //display the navbar only after the page is loaded
-    const navBar = (props.loaded) ? <NavigationBar /> : null;
+    const navBar = (props.loaded) ? <div>navbar</div> : null;
 
     //display spinner only when the page is not loaded
-    let spinner = (!props.loaded) ? <Spinner /> : null;
+    let spinner = (!props.loaded) ? <div>spinner</div> : null;
 
     return (
         <div className="contentWrapper">
             <div className={containerClass}>
-                spinner
+                {spinner}
                 <PoseGroup>
                     {!props.loaded && [
                         <AnimatedOverlay key="overlay" className="overlay" />
                     ]}
                 </PoseGroup>
-                navbar
+                {navBar}
                 <div id="top"></div>
                 body
             </div>

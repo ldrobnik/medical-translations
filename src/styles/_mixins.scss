@@ -1,0 +1,54 @@
+//turns off text selection
+@mixin no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//sets selection colours
+@mixin set-selection($background, $text) {
+  ::-moz-selection {
+    background: $background;
+    color: $text;
+  }
+  ::selection {
+    background: $background;
+    color: $text;
+  }
+}
+
+//sets border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius !important;
+  -moz-border-radius: $radius !important;
+  border-radius: $radius !important;
+  background-clip: padding-box; /* stops bg color from leaking outside the border: */
+}
+
+//turns on flex display
+@mixin flex {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+//creates box shadow
+@mixin shadow($x, $y, $blur, $alpha) {
+  -webkit-box-shadow: $x $y $blur 0 rgba(0,0,0,$alpha);
+  -moz-box-shadow: $x $y $blur 0 rgba(0,0,0,$alpha);
+  box-shadow: $x $y $blur 0 rgba(0,0,0,$alpha);
+}
+
+//creates inset box shadow
+@mixin insetShadow($x, $y, $blur, $spread, $brightness) {
+  -webkit-box-shadow: inset $x $y $blur $spread setColor($brightness);
+  -moz-box-shadow: inset $x $y $blur $spread setColor($brightness);
+  box-shadow: inset $x $y $blur $spread setColor($brightness);
+}
+
+//regular shadow effect
+@mixin regularShadow {
+  @include shadow(4px, 4px, 5px, 0.5);
+}
