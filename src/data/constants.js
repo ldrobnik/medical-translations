@@ -124,13 +124,63 @@ export const WEBSITE_TEXT = {
         },
         rates: {
             title: <React.Fragment>Usual Rates</React.Fragment>,
+            pricing: {
+                title: [
+                    'Translation',
+                    'Revision'
+                ],
+                units: [
+                    {
+                        name: <React.Fragment>Rate per word:</React.Fragment>,
+                        price: [
+                            <React.Fragment>0.08&bnsp;EUR</React.Fragment>,
+                            <React.Fragment>0.04&bnsp;EUR</React.Fragment>
+                        ]
+                    },
+                    {
+                        name: <React.Fragment>Rate per page (250&nbsp;words):</React.Fragment>,
+                        price: [
+                            <React.Fragment>20&bnsp;EUR</React.Fragment>,
+                            <React.Fragment>10&bnsp;EUR</React.Fragment>
+                        ]
+                    },
+                    {
+                        name: <React.Fragment>Hourly rate:</React.Fragment>,
+                        price: [
+                            <React.Fragment>20&bnsp;EUR</React.Fragment>,
+                            <React.Fragment>20&bnsp;EUR</React.Fragment>
+                        ]
+                    },
+                    {
+                        name: <React.Fragment>Minimum rate:</React.Fragment>,
+                        price: [
+                            <React.Fragment>20&bnsp;EUR</React.Fragment>,
+                            <React.Fragment>20&bnsp;EUR</React.Fragment>
+                        ]
+                    }
+                ]
+            },
             button: {
                 text: <React.Fragment>Contact me</React.Fragment>,
                 target: 'contact'
             }
         },
         contact: {
-            title: <React.Fragment>Contact Me</React.Fragment>
+            title: <React.Fragment>Contact Me</React.Fragment>,
+            body: <React.Fragment>If you need my help in translating a text or require linguistic support of any kind, please do not hesitate to contact me at <a href="mailto:lukasz@drobnik.biz">lukasz@drobnik.biz</a>.</React.Fragment>,
+            links: {
+                text: <React.Fragment>You can also find me here:</React.Fragment>,
+                links: [
+                    {
+                        text: 'LinkedIn',
+                        url: 'https://www.linkedin.com/in/lukasz-drobnik/'
+                    },
+                    {
+                        text: 'Proz.com',
+                        url: 'http://www.proz.com/translator/735716'
+                    }
+                ]
+            }
         }
     },
     pl: {
@@ -210,13 +260,63 @@ export const WEBSITE_TEXT = {
     },
     rates: {
         title: <React.Fragment>Typowe stawki</React.Fragment>,
+        pricing: {
+            title: [
+                'Tłumaczenie',
+                'Weryfikacja'
+            ],
+            units: [
+                {
+                    name: <React.Fragment>Stawka za słowo:</React.Fragment>,
+                    price: [
+                        <React.Fragment>0.32&bnsp;PLN</React.Fragment>,
+                        <React.Fragment>0.16&bnsp;PLN</React.Fragment>
+                    ]
+                },
+                {
+                    name: <React.Fragment>Stawka za stronę (250&nbsp;słów):</React.Fragment>,
+                    price: [
+                        <React.Fragment>80&bnsp;PLN</React.Fragment>,
+                        <React.Fragment>40&bnsp;PLN</React.Fragment>
+                    ]
+                },
+                {
+                    name: <React.Fragment>Stawka godzinowa:</React.Fragment>,
+                    price: [
+                        <React.Fragment>80&bnsp;PLN</React.Fragment>,
+                        <React.Fragment>80&bnsp;PLN</React.Fragment>
+                    ]
+                },
+                {
+                    name: <React.Fragment>Stawka minimalna:</React.Fragment>,
+                    price: [
+                        <React.Fragment>80&bnsp;PLN</React.Fragment>,
+                        <React.Fragment>80&bnsp;PLN</React.Fragment>
+                    ]
+                }
+            ]
+        },
         button: {
             text: <React.Fragment>Napisz do mnie</React.Fragment>,
             target: 'contact'
         }
     },
     contact: {
-        title: <React.Fragment>Kontakt</React.Fragment>
+        title: <React.Fragment>Kontakt</React.Fragment>,
+        body: <React.Fragment>Jeśli potrzebujesz pomocy w&nbsp;tłumaczeniu tekstu lub innej usługi językowej, napisz na adres <a href="mailto:lukasz@drobnik.biz">lukasz@drobnik.biz</a>.</React.Fragment>,
+        links: {
+            text: <React.Fragment>Można mnie znaleźć także tutaj:</React.Fragment>,
+            links: [
+                {
+                    text: 'LinkedIn',
+                    url: 'https://www.linkedin.com/in/lukasz-drobnik/'
+                },
+                {
+                    text: 'Proz.com',
+                    url: 'http://www.proz.com/translator/735716'
+                }
+            ]
+        }
     }
 }
 ;
