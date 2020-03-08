@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import posed, {PoseGroup} from 'react-pose';
 
+import Spinner from '../UI/Spinner/Spinner';
 
 
 /* POSE */
@@ -28,7 +29,7 @@ const Home = (props) => {
     const navBar = (props.loaded) ? <div>navbar</div> : null;
 
     //display spinner only when the page is not loaded
-    let spinner = (!props.loaded) ? <div>spinner</div> : null;
+    let spinner = (!props.loaded) ? <Spinner /> : null;
 
     return (
         <div className="contentWrapper">
