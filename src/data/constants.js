@@ -28,7 +28,7 @@ export const SECTION_NAMES = [
         id: 'expertise',
         name: {
             en: <React.Fragment>Areas of Expertise</React.Fragment>,
-            pl: <React.Fragment>Obszary specjalizacji</React.Fragment>
+            pl: <React.Fragment>Specjalizacje</React.Fragment>
         }
     },
     {
@@ -55,13 +55,21 @@ export const WEBSITE_TEXT = {
             subtitle: <React.Fragment>English to Polish medical translations</React.Fragment>,
             button: {
                 text: <React.Fragment>Learn more</React.Fragment>,
-                id: 'about'
+                target: 'about'
             }
         },
         about: {
-
+            title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+            subtitle: <React.Fragment>Medical translator</React.Fragment>,
+            body: <React.Fragment>I am an English to Polish translator specialising in medicine and pharmaceuticals. With more than thirteen years of experience in the field, backed up by my background in life sciences (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish audience by providing reliable translations of the highest quality.</React.Fragment>,
+            button: {
+                text: <React.Fragment>Contact me</React.Fragment>,
+                target: 'contact'
+            }
         },
         expertise: {
+            title: <React.Fragment>Areas of Expertise</React.Fragment>,
+            body: <React.Fragment>Over the years I have spent as a full-time freelance translator, I have tackled hundreds of medical and pharmaceutical texts: from medical equipment manuals to scientific papers (on subjects ranging from microbiology to oncology), to clinical trial documentation, to medicinal product information. I approach every job as a new challenge, with the utmost attention to detail and thorough research.</React.Fragment>,
             experience: [
                 {
                     title: <React.Fragment>Clinical trials</React.Fragment>,
@@ -108,22 +116,44 @@ export const WEBSITE_TEXT = {
                         <React.Fragment>correspondence</React.Fragment>
                     ]
                 }
-            ]
+            ],
+            button: {
+                text: <React.Fragment>Contact me</React.Fragment>,
+                target: 'contact'
+            }
         },
-        rates: {},
-        contact: {}
+        rates: {
+            title: <React.Fragment>Usual Rates</React.Fragment>,
+            button: {
+                text: <React.Fragment>Contact me</React.Fragment>,
+                target: 'contact'
+            }
+        },
+        contact: {
+            title: <React.Fragment>Contact Me</React.Fragment>
+        }
     },
     pl: {
         jumbotron: {
             title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
             subtitle: <React.Fragment>Tłumacz medyczny języka angielskiego</React.Fragment>,
-            button: <React.Fragment>Dowiedz się więcej</React.Fragment>
+            button: {
+                text: <React.Fragment>Dowiedz się więcej</React.Fragment>,
+                target: 'about'
+            }
         },
         about: {
-
+            title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+            subtitle: <React.Fragment>Tłumacz medyczny</React.Fragment>,
+            body: <React.Fragment>Jestem tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie i&nbsp;farmacji. Dzięki ponad trzynastoletniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając rzetelne tłumaczenia o&nbsp;najwyższej jakości.</React.Fragment>,
+            button: {
+                text: <React.Fragment>Napisz do mnie</React.Fragment>,
+                target: 'contact'
+            }
         },
         expertise: {
-
+            title: <React.Fragment>Specjalizacje</React.Fragment>,
+            body: <React.Fragment>W&nbsp;ciągu wieloletniej, pełnowymiarowej pracy jako tłumacz freelancer zmierzyłem się z&nbsp;setkami tekstów z&nbsp;dziedzin medyny i&nbsp;farmacji: od instrukcji obsługi wyrobów medycznych przez artykuły naukowe (na różnorodne tematy - od mikrobiologii po onkologię), dokumentację badań klinicznych aż po druki informacyjne produktów leczniczych. Każde zlecenie traktuję jak nowe wyzwanie, pracując z&nbsp;najwyższą dbałością o&nbsp;szczegóły i&nbsp;rzetelnym zgłębieniem tematu.</React.Fragment>,
             experience: [
                 {
                     title: <React.Fragment>Badania kliniczne</React.Fragment>,
@@ -170,12 +200,23 @@ export const WEBSITE_TEXT = {
                         <React.Fragment>korespondencja</React.Fragment>
                     ]
                 }
-            ]
+            ],
+            button: {
+                text: <React.Fragment>Napisz do mnie</React.Fragment>,
+                target: 'contact'
+            }
         }
 
     },
-    rates: {},
-    contact: {}
-}
+    rates: {
+        title: <React.Fragment>Typowe stawki</React.Fragment>,
+        button: {
+            text: <React.Fragment>Napisz do mnie</React.Fragment>,
+            target: 'contact'
+        }
+    },
+    contact: {
+        title: <React.Fragment>Kontakt</React.Fragment>
+    }
 }
 ;
