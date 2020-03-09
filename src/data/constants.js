@@ -27,21 +27,21 @@ export const SECTION_NAMES = [
     {
         id: 'expertise',
         name: {
-            en: <React.Fragment>Areas of Expertise</React.Fragment>,
+            en: <React.Fragment>Areas of expertise</React.Fragment>,
             pl: <React.Fragment>Specjalizacje</React.Fragment>
         }
     },
     {
         id: 'rates',
         name: {
-            en: <React.Fragment>Usual Rates</React.Fragment>,
+            en: <React.Fragment>Usual rates</React.Fragment>,
             pl: <React.Fragment>Typowe stawki</React.Fragment>
         }
     },
     {
         id: 'contact',
         name: {
-            en: <React.Fragment>Contact Me</React.Fragment>,
+            en: <React.Fragment>Contact me</React.Fragment>,
             pl: <React.Fragment>Kontakt</React.Fragment>
         }
     }
@@ -68,7 +68,7 @@ export const WEBSITE_TEXT = {
             }
         },
         expertise: {
-            title: <React.Fragment>Areas of Expertise</React.Fragment>,
+            title: <React.Fragment>Areas of expertise</React.Fragment>,
             body: <React.Fragment>Over the years I have spent as a full-time freelance translator, I have tackled hundreds of medical and pharmaceutical texts: from medical equipment manuals to scientific papers (on subjects ranging from microbiology to oncology), to clinical trial documentation, to medicinal product information. I approach every job as a new challenge, with the utmost attention to detail and thorough research.</React.Fragment>,
             experience: [
                 {
@@ -123,7 +123,7 @@ export const WEBSITE_TEXT = {
             }
         },
         rates: {
-            title: <React.Fragment>Usual Rates</React.Fragment>,
+            title: <React.Fragment>Usual rates</React.Fragment>,
             pricing: {
                 title: [
                     'Translation',
@@ -166,7 +166,7 @@ export const WEBSITE_TEXT = {
             }
         },
         contact: {
-            title: <React.Fragment>Contact Me</React.Fragment>,
+            title: <React.Fragment>Contact me</React.Fragment>,
             body: <React.Fragment>If you need my help in translating a text or require linguistic support of any kind, please do not hesitate to contact me at <a href="mailto:lukasz@drobnik.biz">lukasz@drobnik.biz</a>.</React.Fragment>,
             links: {
                 text: <React.Fragment>You can also find me here:</React.Fragment>,
