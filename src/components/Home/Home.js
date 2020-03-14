@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import posed, {PoseGroup} from 'react-pose';
 
 import Spinner from '../UI/Spinner/Spinner';
+import NavigationBar from '../NavigationBar/NavigationBar';
 
 
 /* POSE */
@@ -22,25 +23,25 @@ const AnimatedOverlay = posed.div({
 
 
 const Home = (props) => {
-    //app global state
+    //global state
     const globalState = useContext(store);
-
+    const {state} = globalState;
 
     //class applied to outer container to prevent scrolling before the page is loaded
-    const containerClass = (globalState.loaded) ? "" : "constrained";
+    const containerClass = (state.pageLoaded) ? "" : "constrained";
 
     //display the navbar only after the page is loaded
-    const navBar = (globalState.loaded) ? <div>navbar</div> : null;
+    const navBar = (state.pageLoaded) ? <NavigationBar /> : null;
 
     //display spinner only when the page is not loaded
-    let spinner = (!globalState.loaded) ? <Spinner /> : null;
+    let spinner = (!state.pageLoaded) ? <Spinner /> : null;
 
     return (
         <div className="contentWrapper">
             <div className={containerClass}>
                 {spinner}
                 <PoseGroup>
-                    {!globalState.loaded && [
+                    {!state.pageLoaded && [
                         <AnimatedOverlay key="overlay" className="overlay" />
                     ]}
                 </PoseGroup>

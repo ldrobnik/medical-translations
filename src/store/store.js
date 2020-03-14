@@ -4,7 +4,7 @@ import * as actionTypes from './constants';
 const initialState = {
     isMobile: false,
     language: 'en',
-    pageLoaded: false,
+    pageLoaded: true,
     activeSection: ''
 };
 const store = createContext(initialState);
