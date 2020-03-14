@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+// import {connect} from 'react-redux';
 
 import logoImage from '../../../assets/images/logo-blue.svg';
 import './Spinner.css';
@@ -24,10 +24,12 @@ const Spinner = () => {
     );
 };
 
-const mapStateToProps = state => {
-    return {
-        loaded: state.pageLoaded
-    }
-};
+// const mapStateToProps = state => {
+//     return {
+//         loaded: state.pageLoaded
+//     }
+// };
 
-export default connect(mapStateToProps)(Spinner);
+// export default connect(mapStateToProps)(Spinner);
+
+export default Spinner;
