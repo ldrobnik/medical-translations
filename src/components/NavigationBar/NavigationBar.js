@@ -1,11 +1,8 @@
 import React, {useState, useEffect, useContext} from 'react';
 import * as actionTypes from '../../store/constants';
-import {bindActionCreators} from "redux";
 import {Navbar, Nav} from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {connect} from 'react-redux';
 
-import {setMobile} from "../../actions";
 
 import './NavigationBar.css';
 
@@ -20,6 +17,9 @@ const NavigationBar = (props) => {
     const globalState = useContext(store);
     const {state, dispatch} = globalState;
 
+    //mobile status
+    const [isMobile, setIsMobile] = useState(state.isMobile);
+
 
     // Specifies whether the nav is expanded
     const [navExpanded, setNavExpanded] = useState(false);
@@ -30,34 +30,40 @@ const NavigationBar = (props) => {
     // Updates the window width
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth); //update the window width state with the current window width
-        setMobile(); //update the store with mobile status
-        console.log(state.isMobile, windowWidth < MOBILE_BREAKPOINT);
+
+        //set local state for mobile status
+        setIsMobile(windowWidth < MOBILE_BREAKPOINT);
+        handleIsMobileData(); //update the store with mobile status
     };
 
     // Lets the store know if the page is displayed on a mobile device
-    const setMobile = () => {
+    const handleIsMobileData = () => {
 
+        //change global state for mobile status
         dispatch({
             type: actionTypes.SET_MOBILE,
-            isMobile: windowWidth < MOBILE_BREAKPOINT
+            payload: isMobile
         });
 
     };
 
     //Specifies smooth scroll offset depending on the window width
-    const scrollOffset = state.isMobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
-
+    const scrollOffset = isMobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
 
 
     useEffect(() => {
-        setMobile(); //update the store with the mobile status
         window.addEventListener('resize', handleWindowSizeChange); // Add an event listener to monitor the screen width
 
         return () => {
 
             window.removeEventListener('resize', handleWindowSizeChange); //remove the listener when the component unmounts
         }
+    });
+
+    useEffect(() => {
+        handleIsMobileData();
     }, []);
+
 
     return (
 
@@ -114,20 +120,5 @@ const NavigationBar = (props) => {
         </Navbar>
     );
 };
-
-// const mapStateToProps = state => {
-//     return {
-//         mobile: state.isMobile,
-//         lang: state.language,
-//         loaded: state.pageLoaded,
-//         active: state.activeSection
-//     };
-// };
-
-// const mapDispatchToProps = dispatch => {
-//     return bindActionCreators({setMobile}, dispatch);
-// };
-
-// export default connect(mapStateToProps, mapDispatchToProps)(NavigationBar);
 
 export default NavigationBar;

@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import {store} from '../../store/store';
-import {connect} from 'react-redux';
 import posed, {PoseGroup} from 'react-pose';
 
 import Spinner from '../UI/Spinner/Spinner';
@@ -52,13 +51,5 @@ const Home = (props) => {
         </div>
     );
 };
-
-// const mapStateToProps = state => {
-//     return {
-//         loaded: state.pageLoaded
-//     }
-// };
-
-// export default connect(mapStateToProps)(Home);
 
 export default Home;
