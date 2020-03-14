@@ -6,13 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reducer from './reducers';
 import App from './App';
+import { StateProvider } from './store/store';
 
 const store = createStore(reducer);
 
 const app = (
-    <Provider store={store}>
+    <StateProvider>
         <App />
-    </Provider>
+    </StateProvider>
 );
 
 ReactDOM.render(app, document.getElementById('root'));
