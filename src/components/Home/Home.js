@@ -39,7 +39,7 @@ const Home = () => {
     };
 
     useEffect(() => {
-        setTimeout(setPageAsLoaded, 1000);
+        setTimeout(setPageAsLoaded, 500);
     }, []);
 
     return (

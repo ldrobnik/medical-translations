@@ -50,6 +50,9 @@ export const SECTION_NAMES = [
 //Text used on the website
 export const WEBSITE_TEXT = {
     en: {
+        navbar: {
+          lang: 'PL'
+        },
         jumbotron: {
             title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
             subtitle: <React.Fragment>English to Polish medical translations</React.Fragment>,
@@ -184,6 +187,9 @@ export const WEBSITE_TEXT = {
         }
     },
     pl: {
+        navbar: {
+            lang: 'EN'
+        },
         jumbotron: {
             title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
             subtitle: <React.Fragment>Tłumacz medyczny języka angielskiego</React.Fragment>,

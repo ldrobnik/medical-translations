@@ -7,7 +7,7 @@ import logo from '../../assets/images/logo-blue.svg';
 
 import './NavigationBar.css';
 
-import {SECTION_NAMES, OFFSET_DESKTOP, OFFSET_MOBILE, MOBILE_BREAKPOINT} from '../../data/constants';
+import {SECTION_NAMES, OFFSET_DESKTOP, OFFSET_MOBILE, MOBILE_BREAKPOINT, WEBSITE_TEXT} from '../../data/constants';
 
 
 
@@ -20,6 +20,24 @@ const NavigationBar = () => {
     //speciifies whether the website is displayed on a mobile device
     const [isMobile, setIsMobile] = useState(state.isMobile);
 
+    // Lets the store know if the page is displayed on a mobile device
+    const handleIsMobile = () => {
+        dispatch({
+            type: actionTypes.SET_MOBILE,
+            isMobile
+        });
+    };
+
+
+    //changes language value in the store
+    const handleLanguage = () => {
+        const newLanguage = (state.language === 'en') ? 'pl' : 'en'; //new language that is different to the current language
+        dispatch({
+           type: actionTypes.SET_LANGUAGE,
+            language: newLanguage
+        });
+    };
+
     // Specifies whether the nav is expanded
     const [navExpanded, setNavExpanded] = useState(false);
 
@@ -30,19 +48,9 @@ const NavigationBar = () => {
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth); //update the window width state with the current window width
         setIsMobile(windowWidth < MOBILE_BREAKPOINT); //set local state for mobile status
-        handleIsMobileData(); //update the store with mobile status
+        handleIsMobile(); //update the store with mobile status
     };
 
-    // Lets the store know if the page is displayed on a mobile device
-    const handleIsMobileData = () => {
-
-        //change global state for mobile status
-        dispatch({
-            type: actionTypes.SET_MOBILE,
-            isMobile
-        });
-
-    };
 
 
     //Specifies smooth scroll offset depending on the window width
@@ -60,7 +68,7 @@ const NavigationBar = () => {
 
     useEffect(() => {
 
-        handleIsMobileData();
+        handleIsMobile();
 
     }, []);
 
@@ -117,6 +125,11 @@ const NavigationBar = () => {
                             )
                         })
                     }
+                    <div
+                        className='navLink'
+                        onClick={() => handleLanguage()}>
+                        {WEBSITE_TEXT[state.language].navbar.lang}
+                    </div>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
