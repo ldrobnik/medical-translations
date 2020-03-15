@@ -1,9 +1,10 @@
-import React, {useContext} from 'react';
+import React, {useEffect, useContext} from 'react';
 import {store} from '../../store/store';
 import posed, {PoseGroup} from 'react-pose';
 
 import Spinner from '../UI/Spinner/Spinner';
 import NavigationBar from '../NavigationBar/NavigationBar';
+import * as actionTypes from "../../store/constants";
 
 
 /* POSE */
@@ -20,31 +21,37 @@ const AnimatedOverlay = posed.div({
     }
 });
 
-
-const Home = (props) => {
+const Home = () => {
     //global state
-    const globalState = useContext(store);
-    const {state} = globalState;
+    const {state, dispatch} = useContext(store);
 
     //class applied to outer container to prevent scrolling before the page is loaded
     const containerClass = (state.pageLoaded) ? "" : "constrained";
 
-    //display the navbar only after the page is loaded
-    const navBar = (state.pageLoaded) ? <NavigationBar /> : null;
+    //sets page loading status to 'loaded'
+    const setPageAsLoaded = () => {
+      dispatch(
+          {
+              type: actionTypes.SET_PAGE_LOADED,
+              pageLoaded: true
+          }
+      );
+    };
 
-    //display spinner only when the page is not loaded
-    let spinner = (!state.pageLoaded) ? <Spinner /> : null;
+    useEffect(() => {
+        setTimeout(setPageAsLoaded, 1000);
+    }, []);
 
     return (
         <div className="contentWrapper">
             <div className={containerClass}>
-                {spinner}
+                {!state.pageLoaded && <Spinner />}
                 <PoseGroup>
                     {!state.pageLoaded && [
                         <AnimatedOverlay key="overlay" className="overlay" />
                     ]}
                 </PoseGroup>
-                {navBar}
+                {state.pageLoaded && <NavigationBar />}
                 <div id="top"></div>
                 body
             </div>

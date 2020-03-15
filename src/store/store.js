@@ -4,15 +4,15 @@ import * as actionTypes from './constants';
 const initialState = {
     isMobile: false,
     language: 'en',
-    pageLoaded: true,
+    pageLoaded: false,
     activeSection: ''
 };
 const store = createContext(initialState);
-const { Provider } = store;
+const {Provider} = store;
 
-const StateProvider = ( { children } ) => {
+const StateProvider = ({children}) => {
     const [state, dispatch] = useReducer((state, action) => {
-        switch(action.type) {
+        switch (action.type) {
             case actionTypes.SET_MOBILE:
                 return {
                     ...state,
@@ -38,7 +38,7 @@ const StateProvider = ( { children } ) => {
         }
     }, initialState);
 
-    return <Provider value={{ state, dispatch }}>{children}</Provider>;
+    return <Provider value={{state, dispatch}}>{children}</Provider>;
 };
 
-export { store, StateProvider }
+export {store, StateProvider}

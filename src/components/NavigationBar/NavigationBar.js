@@ -14,8 +14,9 @@ import {store} from "../../store/store";
 const NavigationBar = (props) => {
 
     //global state
-    const globalState = useContext(store);
-    const {state, dispatch} = globalState;
+    const {state, dispatch} = useContext(store);
+
+
 
     //mobile status
     const [isMobile, setIsMobile] = useState(state.isMobile);
@@ -42,10 +43,11 @@ const NavigationBar = (props) => {
         //change global state for mobile status
         dispatch({
             type: actionTypes.SET_MOBILE,
-            payload: isMobile
+            isMobile
         });
 
     };
+
 
     //Specifies smooth scroll offset depending on the window width
     const scrollOffset = isMobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
@@ -61,8 +63,11 @@ const NavigationBar = (props) => {
     });
 
     useEffect(() => {
+
         handleIsMobileData();
+
     }, []);
+
 
 
     return (
@@ -76,6 +81,7 @@ const NavigationBar = (props) => {
             variant="light"
             sticky="top"
         >
+
             {/*<Navbar.Brand>*/}
             {/*    <AnchorLink href="#top"*/}
             {/*                offset={scrollOffset}*/}
