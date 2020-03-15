@@ -5,6 +5,7 @@ import posed, {PoseGroup} from 'react-pose';
 import Spinner from '../UI/Spinner/Spinner';
 import NavigationBar from '../NavigationBar/NavigationBar';
 import * as actionTypes from "../../store/constants";
+import {WEBSITE_TEXT} from "../../data/constants";
 
 
 /* POSE */
@@ -40,7 +41,16 @@ const Home = () => {
 
     useEffect(() => {
         setTimeout(setPageAsLoaded, 500);
+
+        //update page title depending on the current language
+        document.title=WEBSITE_TEXT[state.language].title;
     }, []);
+
+    //update page title every time the current language changes
+    useEffect(() => {
+        //update page title depending on the current language
+        document.title=WEBSITE_TEXT[state.language].title;
+    }, [state.language]);
 
     return (
         <div className="contentWrapper">

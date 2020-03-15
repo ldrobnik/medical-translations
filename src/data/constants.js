@@ -50,6 +50,7 @@ export const SECTION_NAMES = [
 //Text used on the website
 export const WEBSITE_TEXT = {
     en: {
+        title: 'Łukasz Drobnik - Polish medical translator',
         navbar: {
           lang: 'PL'
         },
@@ -187,6 +188,7 @@ export const WEBSITE_TEXT = {
         }
     },
     pl: {
+        title: 'Łukasz Drobnik - tłumacz medyczny języka angielskiego',
         navbar: {
             lang: 'EN'
         },
