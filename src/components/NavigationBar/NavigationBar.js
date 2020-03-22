@@ -10,8 +10,6 @@ import './NavigationBar.css';
 import {SECTION_NAMES, OFFSET_DESKTOP, OFFSET_MOBILE, MOBILE_BREAKPOINT, WEBSITE_TEXT} from '../../data/constants';
 
 
-
-
 const NavigationBar = () => {
 
     //global state
@@ -28,14 +26,31 @@ const NavigationBar = () => {
         });
     };
 
+    //Sets page as loaded to turn on the spinner
+    const handlePageLoaded = (pageLoaded) => {
+        dispatch({
+            type: actionTypes.SET_PAGE_LOADED,
+            pageLoaded
+        });
+    };
+
 
     //changes language value in the store
     const handleLanguage = () => {
         const newLanguage = (state.language === 'en') ? 'pl' : 'en'; //new language that is different to the current language
         dispatch({
-           type: actionTypes.SET_LANGUAGE,
+            type: actionTypes.SET_LANGUAGE,
             language: newLanguage
         });
+    };
+
+    //performs all actions related to language change
+    const performLanguageChange = () => {
+        handlePageLoaded(false); //turns on the spinner
+        handleLanguage(); //changes the language
+
+        //turns the spinner off after a while
+        setTimeout(() => handlePageLoaded(true), 500);
     };
 
     // Specifies whether the nav is expanded
@@ -50,7 +65,6 @@ const NavigationBar = () => {
         setIsMobile(windowWidth < MOBILE_BREAKPOINT); //set local state for mobile status
         handleIsMobile(); //update the store with mobile status
     };
-
 
 
     //Specifies smooth scroll offset depending on the window width
@@ -71,7 +85,6 @@ const NavigationBar = () => {
         handleIsMobile();
 
     }, []);
-
 
 
     return (
@@ -100,7 +113,7 @@ const NavigationBar = () => {
                     />
                 </AnchorLink>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse>
                 <Nav className="mr-auto">
                     {
@@ -127,7 +140,7 @@ const NavigationBar = () => {
                     }
                     <div
                         className='navLink'
-                        onClick={() => handleLanguage()}>
+                        onClick={() => performLanguageChange()}>
                         {WEBSITE_TEXT[state.language].navbar.lang}
                     </div>
                 </Nav>

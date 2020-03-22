@@ -5,7 +5,7 @@ import './TopBanner.css';
 
 import AnchorButton from '../UI/AnchorButton/AnchorButton';
 
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
+import {WEBSITE_TEXT} from "../../data/constants";
 import backdrop from '../../assets/images/background.jpg';
 import {store} from "../../store/store";
 
@@ -15,10 +15,10 @@ const TopBanner = (props) => {
     const {state, dispatch} = useContext(store);
 
     //Sets page as loaded
-    const handlePageLoaded = (pageLoaded) => {
+    const handlePageLoaded = () => {
         dispatch({
             type: actionTypes.SET_PAGE_LOADED,
-            pageLoaded
+            pageLoaded: true
         });
     };
 
@@ -42,7 +42,7 @@ const TopBanner = (props) => {
                 className="hiddenBackdrop"
                 src={backdrop}
                 alt={WEBSITE_TEXT[state.language].topBanner.backdropAltText}
-                onLoad={() => setTimeout(() => handlePageLoaded(true), 600)}
+                onLoad={() => setTimeout(() => handlePageLoaded(), 600)}
             />
         </Jumbotron>
     );
