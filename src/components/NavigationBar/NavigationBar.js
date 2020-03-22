@@ -17,7 +17,7 @@ const NavigationBar = () => {
     //global state
     const {state, dispatch} = useContext(store);
 
-    //speciifies whether the website is displayed on a mobile device
+    //specifies whether the website is displayed on a mobile device
     const [isMobile, setIsMobile] = useState(state.isMobile);
 
     // Lets the store know if the page is displayed on a mobile device

@@ -34,8 +34,8 @@ export const SECTION_NAMES = [
     {
         id: 'rates',
         name: {
-            en: <React.Fragment>Usual rates</React.Fragment>,
-            pl: <React.Fragment>Typowe stawki</React.Fragment>
+            en: <React.Fragment>Rates</React.Fragment>,
+            pl: <React.Fragment>Stawki</React.Fragment>
         }
     },
     {
@@ -54,13 +54,14 @@ export const WEBSITE_TEXT = {
         navbar: {
           lang: 'PL'
         },
-        jumbotron: {
+        topBanner: {
             title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
             subtitle: <React.Fragment>English to Polish medical translations</React.Fragment>,
             button: {
-                text: <React.Fragment>Learn more</React.Fragment>,
+                text: 'Learn more',
                 target: 'about'
-            }
+            },
+            backdropAltText: 'Electron microscope photography of erythrocytes'
         },
         about: {
             title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
@@ -72,7 +73,7 @@ export const WEBSITE_TEXT = {
             }
         },
         expertise: {
-            title: <React.Fragment>Areas of expertise</React.Fragment>,
+            title: SECTION_NAMES[1].name.en,
             body: <React.Fragment>Over the years I have spent as a full-time freelance translator, I have tackled hundreds of medical and pharmaceutical texts: from medical equipment manuals to scientific papers (on subjects ranging from microbiology to oncology), to clinical trial documentation, to medicinal product information. I approach every job as a new challenge, with the utmost attention to detail and thorough research.</React.Fragment>,
             experience: [
                 {
@@ -122,12 +123,12 @@ export const WEBSITE_TEXT = {
                 }
             ],
             button: {
-                text: <React.Fragment>Contact me</React.Fragment>,
+                text: SECTION_NAMES[3].name.en,
                 target: 'contact'
             }
         },
         rates: {
-            title: <React.Fragment>Usual rates</React.Fragment>,
+            title: SECTION_NAMES[2].name.en,
             pricing: {
                 title: [
                     'Translation',
@@ -165,12 +166,12 @@ export const WEBSITE_TEXT = {
                 ]
             },
             button: {
-                text: <React.Fragment>Contact me</React.Fragment>,
+                text: SECTION_NAMES[3].name.en,
                 target: 'contact'
             }
         },
         contact: {
-            title: <React.Fragment>Contact me</React.Fragment>,
+            title: SECTION_NAMES[3].name.en,
             body: <React.Fragment>If you need my help in translating a text or require linguistic support of any kind, please do not hesitate to contact me at <a href="mailto:lukasz@drobnik.biz">lukasz@drobnik.biz</a>.</React.Fragment>,
             links: {
                 text: <React.Fragment>You can also find me here:</React.Fragment>,
@@ -192,16 +193,17 @@ export const WEBSITE_TEXT = {
         navbar: {
             lang: 'EN'
         },
-        jumbotron: {
+        topBanner: {
             title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
             subtitle: <React.Fragment>Tłumacz medyczny języka angielskiego</React.Fragment>,
             button: {
-                text: <React.Fragment>Dowiedz się więcej</React.Fragment>,
+                text: 'Dowiedz się więcej',
                 target: 'about'
-            }
+            },
+            backdropAltText: 'Fotografia erytrocytów wykonana pod mikroskopem elektronowym'
         },
         about: {
-            title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+            title: SECTION_NAMES[1].name.pl,
             subtitle: <React.Fragment>Tłumacz medyczny</React.Fragment>,
             body: <React.Fragment>Jestem tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie i&nbsp;farmacji. Dzięki ponad trzynastoletniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając rzetelne tłumaczenia o&nbsp;najwyższej jakości.</React.Fragment>,
             button: {
@@ -210,7 +212,7 @@ export const WEBSITE_TEXT = {
             }
         },
         expertise: {
-            title: <React.Fragment>Specjalizacje</React.Fragment>,
+            title: SECTION_NAMES[2].name.pl,
             body: <React.Fragment>W&nbsp;ciągu wieloletniej, pełnowymiarowej pracy jako tłumacz freelancer zmierzyłem się z&nbsp;setkami tekstów z&nbsp;dziedzin medyny i&nbsp;farmacji: od instrukcji obsługi wyrobów medycznych przez artykuły naukowe (na różnorodne tematy - od mikrobiologii po onkologię), dokumentację badań klinicznych aż po druki informacyjne produktów leczniczych. Każde zlecenie traktuję jak nowe wyzwanie, pracując z&nbsp;najwyższą dbałością o&nbsp;szczegóły i&nbsp;rzetelnym zgłębieniem tematu.</React.Fragment>,
             experience: [
                 {
@@ -267,7 +269,7 @@ export const WEBSITE_TEXT = {
 
     },
     rates: {
-        title: <React.Fragment>Typowe stawki</React.Fragment>,
+        title: SECTION_NAMES[2].name.pl,
         pricing: {
             title: [
                 'Tłumaczenie',
@@ -310,7 +312,7 @@ export const WEBSITE_TEXT = {
         }
     },
     contact: {
-        title: <React.Fragment>Kontakt</React.Fragment>,
+        title: SECTION_NAMES[3].name.pl,
         body: <React.Fragment>Jeśli potrzebujesz pomocy w&nbsp;tłumaczeniu tekstu lub innej usługi językowej, napisz na adres <a href="mailto:lukasz@drobnik.biz">lukasz@drobnik.biz</a>.</React.Fragment>,
         links: {
             text: <React.Fragment>Można mnie znaleźć także tutaj:</React.Fragment>,

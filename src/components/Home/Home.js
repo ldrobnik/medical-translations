@@ -4,6 +4,7 @@ import posed, {PoseGroup} from 'react-pose';
 
 import Spinner from '../UI/Spinner/Spinner';
 import NavigationBar from '../NavigationBar/NavigationBar';
+import TopBanner from '../TopBanner/TopBanner';
 import * as actionTypes from "../../store/constants";
 import {WEBSITE_TEXT} from "../../data/constants";
 
@@ -63,7 +64,7 @@ const Home = () => {
                 </PoseGroup>
                 {state.pageLoaded && <NavigationBar />}
                 <div id="top"></div>
-                body
+                <TopBanner />
             </div>
         </div>
     );
