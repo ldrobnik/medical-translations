@@ -195,7 +195,7 @@ export const WEBSITE_TEXT = {
         },
         topBanner: {
             title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
-            subtitle: <React.Fragment>Tłumacz medyczny języka angielskiego</React.Fragment>,
+            subtitle: <React.Fragment>Tłumaczenia medyczne z&nbsp;języka angielskiego</React.Fragment>,
             button: {
                 text: 'Dowiedz się więcej',
                 target: 'about'
