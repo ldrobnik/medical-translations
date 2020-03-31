@@ -31,7 +31,8 @@ const TopBanner = (props) => {
 
     return (
         <Jumbotron
-            fluid>
+            fluid
+        className="verticallyCentered">
             <div className="bannerContent">
                 <Col md={{ span: 4, offset: 4 }}>
                     <TextBubble>
