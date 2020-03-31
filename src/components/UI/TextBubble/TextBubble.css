@@ -1,8 +1,10 @@
 .textBubble {
   -moz-transform: skewX(-3deg);
   -o-transform: skewX(-3deg);
-  -webkit-transform: skewX(-3deg); }
-  .textBubble div {
+  -webkit-transform: skewX(-3deg);
+  background-color: #099dcd;
+  padding: 50px 20px; }
+  .textBubble .insideOblique {
     display: block;
     width: 100%;
     -moz-transform: skewX(3deg);

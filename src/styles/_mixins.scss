@@ -4,7 +4,7 @@
   -o-transform: skewX($deg);
   -webkit-transform: skewX($deg);
 
-  div {
+  .insideOblique {
     display: block;
     width: 100%;
     -moz-transform: skewX(-1*$deg);

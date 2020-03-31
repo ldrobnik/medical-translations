@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAEA,WAAY;ECAV,cAAc,EAAE,YAAW;EAC3B,YAAY,EAAE,YAAW;EACzB,iBAAiB,EAAE,YAAW;EAE9B,eAAI;IACF,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI;IACX,cAAc,EAAE,WAAc;IAC9B,YAAY,EAAE,WAAc;IAC5B,iBAAiB,EAAE,WAAc",
-"sources": ["TextBubble.scss","../../../styles/_mixins.scss"],
+"mappings": "AAEA,WAAY;ECAV,cAAc,EAAE,YAAW;EAC3B,YAAY,EAAE,YAAW;EACzB,iBAAiB,EAAE,YAAW;EDA9B,gBAAgB,EEHL,OAAO;EFIlB,OAAO,EAAE,SAAS;ECClB,0BAAe;IACb,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI;IACX,cAAc,EAAE,WAAc;IAC9B,YAAY,EAAE,WAAc;IAC5B,iBAAiB,EAAE,WAAc",
+"sources": ["TextBubble.scss","../../../styles/_mixins.scss","../../../styles/_variables.scss"],
 "names": [],
 "file": "TextBubble.css"
 }

@@ -7,7 +7,7 @@ const TextBubble = props => {
 
     return (
         <div className="textBubble">
-            <div>
+            <div className="insideOblique">
                 {props.children}
             </div>
         </div>
