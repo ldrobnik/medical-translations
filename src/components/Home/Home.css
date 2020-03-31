@@ -1,0 +1,78 @@
+body {
+  font-family: "Roboto", sans-serif !important;
+  color: #f5f5f5 !important;
+  overflow-x: hidden;
+  width: 100%; }
+  body ::-moz-selection {
+    background: #f5f5f5;
+    color: #099dcd; }
+  body ::selection {
+    background: #f5f5f5;
+    color: #099dcd; }
+
+a {
+  color: #099dcd;
+  text-decoration: none;
+  cursor: pointer; }
+  a:link {
+    color: #099dcd;
+    text-decoration: none; }
+  a:visited {
+    color: #099dcd;
+    text-decoration: none; }
+  a:hover {
+    color: #099dcd !important;
+    text-decoration: none !important; }
+  a:active {
+    color: #099dcd;
+    text-decoration: none; }
+
+.highlighted {
+  font-weight: bold;
+  color: #a7e6fb; }
+
+.separator {
+  background-color: #f5f5f5;
+  height: 8px;
+  margin-bottom: 1.5em; }
+
+.lightBackground {
+  background-color: #f5f5f5 !important;
+  color: #099dcd;
+  width: 100vw; }
+  .lightBackground ::-moz-selection {
+    background: #099dcd;
+    color: #f5f5f5; }
+  .lightBackground ::selection {
+    background: #099dcd;
+    color: #f5f5f5; }
+  .lightBackground h1 {
+    color: #099dcd; }
+  .lightBackground .highlighted {
+    color: #099dcd; }
+  .lightBackground .separator {
+    background-color: #099dcd; }
+
+.sectionContent {
+  padding: 3% 1% 5% 1%;
+  overflow: hidden; }
+
+.verticallyCentered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.horizontallyCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.centeredBothWays {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.translucent {
+  opacity: 0.4; }
+
+/*# sourceMappingURL=Home.css.map */

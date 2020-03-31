@@ -2,6 +2,8 @@ import React, {useContext} from 'react';
 import {store} from '../../store/store';
 import posed, {PoseGroup} from 'react-pose';
 
+import './Layout.css';
+
 import Spinner from '../UI/Spinner/Spinner';
 import NavigationBar from '../NavigationBar/NavigationBar';
 
