@@ -1,3 +1,19 @@
+//creates an oblique box
+@mixin obliqueBox($deg) {
+  -moz-transform: skewX($deg);
+  -o-transform: skewX($deg);
+  -webkit-transform: skewX($deg);
+
+  div {
+    display: block;
+    width: 100%;
+    -moz-transform: skewX(-1*$deg);
+    -o-transform: skewX(-1*$deg);
+    -webkit-transform: skewX(-1*$deg);
+  }
+
+}
+
 //turns off text selection
 @mixin no-select {
   -webkit-user-select: none;

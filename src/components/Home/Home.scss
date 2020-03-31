@@ -49,7 +49,7 @@ a {
   margin-bottom: 1.5em;
 }
 
-.lightBackground {
+.lightSection {
   background-color: $lightColor !important;
   color: $themeColor;
   width: 100vw;
@@ -66,6 +66,16 @@ a {
   .separator {
     background-color: $themeColor;
   }
+}
+
+.lightBackground {
+  background-color: $lightColor;
+  color: $themeColor;
+}
+
+.themeBackground {
+  background-color: $themeColor;
+  color: $lightColor;
 }
 
 .sectionContent {
