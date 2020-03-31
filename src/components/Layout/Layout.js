@@ -16,7 +16,7 @@ const AnimatedOverlay = posed.div({
         opacity: 0,
         transition: {
             ease: 'easeOut',
-            duration: 800
+            duration: 600
         }
     }
 });
