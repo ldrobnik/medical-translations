@@ -2,6 +2,7 @@ import React, {useEffect, useContext} from 'react';
 import {store} from '../../store/store';
 import posed, {PoseGroup} from 'react-pose';
 
+import Layout from '../Layout/Layout';
 import Spinner from '../UI/Spinner/Spinner';
 import NavigationBar from '../NavigationBar/NavigationBar';
 import TopBanner from '../TopBanner/TopBanner';
@@ -54,19 +55,10 @@ const Home = () => {
     }, [state.language]);
 
     return (
-        <div className="contentWrapper">
-            <div className={containerClass}>
-                {!state.pageLoaded && <Spinner />}
-                <PoseGroup>
-                    {!state.pageLoaded && [
-                        <AnimatedOverlay key="overlay" className="overlay" />
-                    ]}
-                </PoseGroup>
-                {state.pageLoaded && <NavigationBar />}
+        <Layout>
                 <div id="top"></div>
                 <TopBanner />
-            </div>
-        </div>
+        </Layout>
     );
 };
 
