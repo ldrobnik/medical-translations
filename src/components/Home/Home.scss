@@ -78,6 +78,28 @@ a {
   color: $lightColor;
 }
 
+
+.lightBackgroundHoverable {
+  background-color: $lightColor;
+  color: $themeColor;
+
+  transition: background-color 1s ease-in-out;
+  &:hover {
+    background-color: setColor(2);
+  }
+
+}
+
+.themeBackgroundHoverable {
+  background-color: $themeColor;
+  color: $lightColor;
+
+  transition: background-color 1s ease-in-out;
+  &:hover {
+    background-color: setColor(2);
+  }
+}
+
 .sectionContent {
   padding: 3% 1% 5% 1%;
   overflow: hidden;

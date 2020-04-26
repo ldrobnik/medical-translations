@@ -15,7 +15,7 @@ const AnchorButton = (props) => {
                 href={`#${props.target}`}
                 offset={OFFSET_DESKTOP}>
                 <div
-                    className={`${props.background}Background anchorButton`}
+                    className={`${props.background}BackgroundHoverable anchorButton`}
                 >
                     <div
                         className="insideOblique">
