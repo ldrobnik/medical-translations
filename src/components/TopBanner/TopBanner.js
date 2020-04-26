@@ -41,6 +41,7 @@ const TopBanner = (props) => {
                         <AnchorButton
                             message={WEBSITE_TEXT[state.language].topBanner.button.text}
                             target={WEBSITE_TEXT[state.language].topBanner.button.target}
+                            background="light"
                             className="bannerButton"
                         />
                     </TextBubble>

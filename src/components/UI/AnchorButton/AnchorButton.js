@@ -8,11 +8,20 @@ import {OFFSET_DESKTOP} from '../../../data/constants';
 const AnchorButton = (props) => {
 
     return (
+
         <AnchorLink
             href={`#${props.target}`}
             offset={OFFSET_DESKTOP}>
-            {props.message}
+            <div
+                className={`${props.background}Background anchorButton`}
+            >
+                <div
+                    className="insideOblique">
+                    {props.message}
+                </div>
+            </div>
         </AnchorLink>
+
     );
 };
 
