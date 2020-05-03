@@ -5,11 +5,11 @@ import {Jumbotron} from 'react-bootstrap';
 import './TopBanner.css';
 
 import AnchorButton from '../UI/AnchorButton/AnchorButton';
-
 import TextBubble from '../UI/TextBubble/TextBubble';
 
 import {WEBSITE_TEXT} from "../../data/constants";
 import backdrop from '../../assets/images/background.jpg';
+import logo from '../../assets/images/logo.svg';
 import {store} from "../../store/store";
 
 const TopBanner = (props) => {
@@ -36,7 +36,13 @@ const TopBanner = (props) => {
             <div className="bannerContent">
                 <Col md={{ span: 4, offset: 4 }}>
                     <TextBubble>
-                        <h1 className="title">{WEBSITE_TEXT[state.language].topBanner.title}</h1>
+                        <img
+                            src={logo}
+                            alt="Logo"
+                            width="150"
+                            height="150"
+                        />
+                        <div className="title">{WEBSITE_TEXT[state.language].topBanner.title}</div>
                         <div className="subtitle">{WEBSITE_TEXT[state.language].topBanner.subtitle}</div>
                         <AnchorButton
                             message={WEBSITE_TEXT[state.language].topBanner.button.text}
