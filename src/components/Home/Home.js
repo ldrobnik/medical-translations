@@ -8,6 +8,7 @@ import TopBanner from '../TopBanner/TopBanner';
 import About from '../About/About';
 import Expertise from '../Expertise/Expertise';
 import Rates from '../Rates/Rates';
+import Contact from '../Contact/Contact';
 import * as actionTypes from "../../store/constants";
 import {WEBSITE_TEXT} from "../../data/constants";
 
@@ -46,6 +47,7 @@ const Home = () => {
                 <About />
                 <Expertise />
                 <Rates />
+                <Contact />
         </Layout>
     );
 };
