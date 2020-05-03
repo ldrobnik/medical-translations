@@ -64,8 +64,9 @@ export const WEBSITE_TEXT = {
                 backdropAltText: 'Electron microscope photography of erythrocytes'
             },
             about: {
-                title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
-                subtitle: <React.Fragment>Medical translator</React.Fragment>,
+                title: SECTION_NAMES[0].name.en,
+                name: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+                role: <React.Fragment>Medical translator</React.Fragment>,
                 body: <React.Fragment>I am an English to Polish translator specialising in medicine and pharmaceuticals.
                     With more than thirteen years of experience in the field, backed up by my background in life sciences
                     (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish
@@ -212,8 +213,9 @@ export const WEBSITE_TEXT = {
                 backdropAltText: 'Fotografia erytrocytów wykonana pod mikroskopem elektronowym'
             },
             about: {
-                title: SECTION_NAMES[1].name.pl,
-                subtitle: <React.Fragment>Tłumacz medyczny</React.Fragment>,
+                title: SECTION_NAMES[0].name.pl,
+                name: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+                role: <React.Fragment>Tłumacz medyczny</React.Fragment>,
                 body: <React.Fragment>Jestem tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie
                     i&nbsp;farmacji. Dzięki ponad trzynastoletniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem
                     przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom
@@ -225,7 +227,7 @@ export const WEBSITE_TEXT = {
                 }
             },
             expertise: {
-                title: SECTION_NAMES[2].name.pl,
+                title: SECTION_NAMES[1].name.pl,
                 body: <React.Fragment>W&nbsp;ciągu wieloletniej, pełnowymiarowej pracy jako tłumacz freelancer zmierzyłem
                     się z&nbsp;setkami tekstów z&nbsp;dziedzin medyny i&nbsp;farmacji: od instrukcji obsługi wyrobów
                     medycznych przez artykuły naukowe (na różnorodne tematy - od mikrobiologii po onkologię), dokumentację
