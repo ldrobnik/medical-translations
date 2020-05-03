@@ -4,7 +4,6 @@ body {
   background-position: center center;
   background-attachment: fixed;
   font-family: "Roboto", sans-serif !important;
-  color: #f5f5f5 !important;
   overflow-x: hidden;
   width: 100%; }
   body ::-moz-selection {
@@ -41,7 +40,6 @@ a {
   margin-bottom: 1.5em; }
 
 .section {
-  text-align: center;
   padding: 2em;
   min-height: 400px; }
 
@@ -69,8 +67,21 @@ a {
     background: #f5f5f5;
     color: #099dcd; }
   .themeBackground h1 {
-    color: #099dcd; }
+    color: #f5f5f5; }
   .themeBackground .highlighted {
+    color: #f5f5f5; }
+
+.noBackground {
+  color: #099dcd; }
+  .noBackground ::-moz-selection {
+    background: #f5f5f5;
+    color: #099dcd; }
+  .noBackground ::selection {
+    background: #f5f5f5;
+    color: #099dcd; }
+  .noBackground h1 {
+    color: #099dcd; }
+  .noBackground .highlighted {
     color: #f5f5f5; }
 
 .lightBackgroundHoverable {

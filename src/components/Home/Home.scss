@@ -7,7 +7,6 @@ body {
   background-attachment: fixed;
   font-family: $sansSerif !important;
   @include set-selection($lightColor, $themeColor);
-  color: $lightColor !important;
   overflow-x: hidden;
   width: 100%;
 }
@@ -50,8 +49,6 @@ a {
 }
 
 .section {
-  //width: 100vw;
-  text-align: center;
   padding: 2em;
   min-height: 400px;
 }
@@ -75,6 +72,20 @@ a {
 .themeBackground {
   background-color: $themeColor;
   color: $lightColor;
+
+  @include set-selection($lightColor, $themeColor);
+
+  h1 {
+    color: $lightColor;
+  }
+
+  .highlighted {
+    color: $lightColor;
+  }
+}
+
+.noBackground {
+  color: $themeColor;
 
   @include set-selection($lightColor, $themeColor);
 
