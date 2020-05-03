@@ -5,6 +5,7 @@ import './Home.css';
 
 import Layout from '../Layout/Layout';
 import TopBanner from '../TopBanner/TopBanner';
+import About from '../About/About';
 import * as actionTypes from "../../store/constants";
 import {WEBSITE_TEXT} from "../../data/constants";
 
@@ -40,6 +41,7 @@ const Home = () => {
         <Layout>
                 <div id="top"></div>
                 <TopBanner />
+                <About />
         </Layout>
     );
 };
