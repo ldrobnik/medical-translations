@@ -1,5 +1,5 @@
-import React, {useState, useEffect, useContext} from 'react';
-import {Row, Col} from 'react-bootstrap';
+import React, {useEffect, useContext} from 'react';
+import {Col} from 'react-bootstrap';
 import * as actionTypes from '../../store/constants';
 import {Jumbotron} from 'react-bootstrap';
 import './TopBanner.css';
