@@ -17,7 +17,7 @@ const Expertise = (props) => {
 
         <Row
             id="expertise"
-            className="section noBackground">
+            className="section themeBackground">
             <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
         </Row>
     );

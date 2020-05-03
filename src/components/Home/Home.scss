@@ -70,24 +70,10 @@ a {
 }
 
 .themeBackground {
-  background-color: $themeColor;
+  background-color: $translucentThemeColor;
   color: $lightColor;
 
   @include set-selection($lightColor, $themeColor);
-
-  h1 {
-    color: $lightColor;
-  }
-
-  .highlighted {
-    color: $lightColor;
-  }
-}
-
-.noBackground {
-  color: $lightColor;
-
-  @include set-selection($themeColor, $lightColor);
 
   h1 {
     color: $lightColor;
