@@ -72,15 +72,15 @@ a {
     color: #f5f5f5; }
 
 .noBackground {
-  color: #099dcd; }
+  color: #f5f5f5; }
   .noBackground ::-moz-selection {
-    background: #f5f5f5;
-    color: #099dcd; }
+    background: #099dcd;
+    color: #f5f5f5; }
   .noBackground ::selection {
-    background: #f5f5f5;
-    color: #099dcd; }
+    background: #099dcd;
+    color: #f5f5f5; }
   .noBackground h1 {
-    color: #099dcd; }
+    color: #f5f5f5; }
   .noBackground .highlighted {
     color: #f5f5f5; }
 

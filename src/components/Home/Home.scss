@@ -85,12 +85,12 @@ a {
 }
 
 .noBackground {
-  color: $themeColor;
+  color: $lightColor;
 
-  @include set-selection($lightColor, $themeColor);
+  @include set-selection($themeColor, $lightColor);
 
   h1 {
-    color: $themeColor;
+    color: $lightColor;
   }
 
   .highlighted {
