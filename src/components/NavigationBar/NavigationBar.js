@@ -35,13 +35,18 @@ const NavigationBar = () => {
     };
 
 
-    //changes language value in the store
+    //changes language value in the store and stores it in local storage
     const handleLanguage = () => {
         const newLanguage = (state.language === 'en') ? 'pl' : 'en'; //new language that is different to the current language
+
+        //set language in the store
         dispatch({
             type: actionTypes.SET_LANGUAGE,
             language: newLanguage
         });
+
+        //save language in local storage
+        localStorage.setItem('language', newLanguage);
     };
 
     //performs all actions related to language change
