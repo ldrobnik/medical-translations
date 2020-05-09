@@ -6,6 +6,12 @@
   padding: 10px;
   height: 100%;
   cursor: pointer;
+  transition: color 1s ease-in-out;
+
+  &:hover {
+    color: setColor(2) !important;
+  }
+
 }
 
 .active {

@@ -3,7 +3,10 @@
   text-decoration: none !important;
   padding: 10px;
   height: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: color 1s ease-in-out; }
+  .navLink:hover {
+    color: #45cbf7 !important; }
 
 .active {
   text-decoration: underline !important; }
