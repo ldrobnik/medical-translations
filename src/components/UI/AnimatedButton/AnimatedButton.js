@@ -8,6 +8,7 @@ const AnimatedButton = (props) => {
     return (
         <div
             className={`${props.background}BackgroundHoverable anchorButton`}
+            onClick={props.action}
         >
             <div
                 className="insideOblique">

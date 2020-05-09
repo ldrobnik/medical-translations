@@ -5,7 +5,6 @@ import posed from 'react-pose';
 import './DataNotice.css';
 
 import AnimatedButton from '../AnimatedButton/AnimatedButton';
-import TextBubble from '../TextBubble/TextBubble';
 
 import {WEBSITE_TEXT} from "../../../data/constants";
 import * as actionTypes from "../../../store/constants";
@@ -75,7 +74,6 @@ export const DataNotice = (props) => {
 
 
     useEffect(() => {
-        console.log(state.dataNoticeVisible, noticeVisible);
         setTimeout(setContent, 2500);
     });
 
@@ -92,7 +90,7 @@ export const DataNotice = (props) => {
                             {WEBSITE_TEXT[state.language].dataNotice.message}
                         </div>
                         <AnimatedButton
-                            onClick={acceptDataNotice}
+                            action={acceptDataNotice}
                             background="light"
                             message={WEBSITE_TEXT[state.language].dataNotice.button}
                         >
