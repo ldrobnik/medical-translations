@@ -8,7 +8,8 @@
   user-select: none;
   padding: 0.5em 1em;
   margin: 2em auto 0 auto;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
   .anchorButton .insideOblique {
     display: block;
     width: 100%;

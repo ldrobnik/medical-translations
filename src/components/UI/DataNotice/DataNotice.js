@@ -5,6 +5,7 @@ import posed from 'react-pose';
 import './DataNotice.css';
 
 import AnimatedButton from '../AnimatedButton/AnimatedButton';
+import TextBubble from '../TextBubble/TextBubble';
 
 import {WEBSITE_TEXT} from "../../../data/constants";
 import * as actionTypes from "../../../store/constants";
@@ -81,22 +82,26 @@ export const DataNotice = (props) => {
     return (
         <React.Fragment>
             {(state.dataNoticeVisible && noticeVisible) &&
-            <div className="dataNotice">
-                <AnimatedContent
-                    pose={noticeFadeIn ? 'visible' : 'hidden'}>
-                    <div className="dataNoticeMessage">
-                        {WEBSITE_TEXT[state.language].dataNotice.message}
-                    </div>
-                    <AnimatedButton
-                        onClick={acceptDataNotice}
-                        background="light"
-                        message={WEBSITE_TEXT[state.language].dataNotice.button}
+            <AnimatedContent
+                pose={noticeFadeIn ? 'visible' : 'hidden'}>
+                <div className="dataNotice">
+                    <div
+                        className="insideOblique"
                     >
-                    </AnimatedButton>
-                </AnimatedContent>
-            </div>
+                        <div className="dataNoticeMessage">
+                            {WEBSITE_TEXT[state.language].dataNotice.message}
+                        </div>
+                        <AnimatedButton
+                            onClick={acceptDataNotice}
+                            background="light"
+                            message={WEBSITE_TEXT[state.language].dataNotice.button}
+                        >
+                        </AnimatedButton>
+                    </div>
+                </div>
+            </AnimatedContent>
 
-        }
+            }
         </React.Fragment>
     );
 };

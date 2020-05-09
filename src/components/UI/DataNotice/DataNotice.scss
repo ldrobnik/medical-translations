@@ -2,34 +2,35 @@
 
 .dataNotice {
   background-color: $themeColor;
-  padding: 1em 0;
+  padding: 40px 20px 20px 30px;
   margin: 0 auto;
   position: fixed;
   bottom: 10px;
-  left: 5%;
-  width: 90%;
+  left: 10%;
+  width: 80%;
   text-align: center;
   border: $lightColor 1px solid;
+  @include obliqueBox(-3deg);
+
 
 
   @media all and (min-width: $mediumScr) {
-  left: 10%;
-  width: 80%;
-}
-
-  @media all and (min-width: $largeScr) {
   left: 15%;
   width: 70%;
 }
 
-  @media all and (min-width: $extraLargeScr) {
+  @media all and (min-width: $largeScr) {
   left: 20%;
   width: 60%;
+}
+
+  @media all and (min-width: $extraLargeScr) {
+  left: 25%;
+  width: 50%;
 }
 }
 
 .dataNoticeMessage {
   color: $lightColor;
-  font-size: 0.8em;
-  padding: 0.5em 1em;
+  font-size: 1em;
 }
