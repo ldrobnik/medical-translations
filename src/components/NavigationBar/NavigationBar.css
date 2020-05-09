@@ -9,7 +9,7 @@
     color: #45cbf7 !important; }
 
 .active {
-  text-decoration: underline !important; }
+  color: #45cbf7 !important; }
 
 .navbar-light .navbar-toggler {
   border: none !important;
