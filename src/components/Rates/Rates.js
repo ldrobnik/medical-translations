@@ -27,13 +27,13 @@ const Rates = (props) => {
 
     return (
         <React.Fragment>
+            <Waypoint
+                onEnter={() => setSection()}
+            />
             <Row
                 id="rates"
                 className="section lightBackground">
                 <h1>{WEBSITE_TEXT[state.language].rates.title}</h1>
-                <Waypoint
-                    onEnter={() => setSection()}
-                />
             </Row>
         </React.Fragment>
     );

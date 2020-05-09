@@ -30,13 +30,13 @@ const About = (props) => {
 
     return (
         <React.Fragment>
+            <Waypoint
+                onEnter={() => setSection()}
+            />
             <Row
                 id="about"
                 className="section lightBackground">
                 <h1>{WEBSITE_TEXT[state.language].about.title}</h1>
-                <Waypoint
-                    onEnter={() => setSection()}
-                />
             </Row>
         </React.Fragment>
     );

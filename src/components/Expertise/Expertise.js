@@ -27,13 +27,13 @@ const Expertise = (props) => {
 
     return (
         <React.Fragment>
+            <Waypoint
+                onEnter={() => setSection()}
+            />
             <Row
                 id="expertise"
                 className="section themeBackground">
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
-                <Waypoint
-                    onEnter={() => setSection()}
-                />
             </Row>
         </React.Fragment>
     );

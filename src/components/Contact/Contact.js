@@ -27,13 +27,13 @@ const Contact = (props) => {
 
     return (
         <React.Fragment>
+            <Waypoint
+                onEnter={() => setSection()}
+            />
             <Row
                 id="contact"
                 className="section themeBackground">
                 <h1>{WEBSITE_TEXT[state.language].contact.title}</h1>
-                <Waypoint
-                    onEnter={() => setSection()}
-                />
             </Row>
         </React.Fragment>
     );

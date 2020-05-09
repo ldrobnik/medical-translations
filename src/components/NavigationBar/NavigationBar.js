@@ -34,6 +34,16 @@ const NavigationBar = () => {
         });
     };
 
+    //set active section to 'about'
+    const setSection = () => {
+        dispatch(
+            {
+                type: actionTypes.SET_ACTIVE_SECTION,
+                activeSection: SECTION_NAMES[0].id
+            }
+        );
+    };
+
 
     //changes language value in the store and stores it in local storage
     const handleLanguage = () => {
@@ -54,6 +64,7 @@ const NavigationBar = () => {
     const performLanguageChange = () => {
         handlePageLoaded(false); //turns on the spinner
         handleLanguage(); //changes the language
+
 
         //turns the spinner off after a while
         setTimeout(() => handlePageLoaded(true), 500);
@@ -89,6 +100,7 @@ const NavigationBar = () => {
     useEffect(() => {
 
         handleIsMobile();
+        setSection(); //sets active section to about
 
     }, []);
 
@@ -123,7 +135,7 @@ const NavigationBar = () => {
             <Navbar.Collapse>
                 <Nav className="mr-auto">
                     {
-                        SECTION_NAMES.map((section) => {
+                        SECTION_NAMES.map((section, index) => {
                             let linkClass = '';
                             if (section.id === state.activeSection) {
                                 linkClass = 'navLink active'
