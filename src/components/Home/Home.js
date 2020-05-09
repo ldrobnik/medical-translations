@@ -36,7 +36,25 @@ const Home = () => {
       );
     };
 
+    //stops displaying data notice
+    const turnNoticeOff = () => {
+        dispatch(
+            {
+                type: actionTypes.SET_DATA_NOTICE_VISIBLE,
+                dataNoticeVisible: false
+            }
+        );
+    };
 
+    //stores info that data notice has been accepted
+    const setNoticeAsAccepted = () => {
+        dispatch(
+            {
+                type: actionTypes.SET_DATA_NOTICE_ACCEPTED,
+                dataNoticeAccepted: true
+            }
+        );
+    };
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
 
@@ -44,11 +62,11 @@ const Home = () => {
         const noticeAccepted = localStorage.getItem('dataNoticeAccepted');
 
         if (noticeAccepted) {
-            //store info that the notice has been accepted in Redux store
-            // props.setDataNoticeAccepted(true);
+            //store info that the notice has been accepted
+            setNoticeAsAccepted();
 
             //stop displaying the notice
-            // props.setDataNoticeVisible(false);
+            turnNoticeOff();
         }
 
         //check if the language is stored in localStorate and if so, update Redux state accordingly
