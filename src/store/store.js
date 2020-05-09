@@ -5,7 +5,9 @@ const initialState = {
     isMobile: false,
     language: 'en',
     pageLoaded: false,
-    activeSection: ''
+    activeSection: '',
+    dataNoticeVisible: true,
+    dataNoticeAccepted: false
 };
 const store = createContext(initialState);
 const {Provider} = store;
@@ -32,6 +34,16 @@ const StateProvider = ({children}) => {
                 return {
                     ...state,
                     activeSection: action.activeSection
+                };
+            case actionTypes.SET_DATA_NOTICE_VISIBLE:
+                return {
+                    ...state,
+                    dataNoticeVisible: action.dataNoticeVisible
+                };
+            case actionTypes.SET_DATA_NOTICE_ACCEPTED:
+                return {
+                  ...state,
+                  dataNoticeAccepted: action.dataNoticeAccepted
                 };
             default:
                 throw new Error();
