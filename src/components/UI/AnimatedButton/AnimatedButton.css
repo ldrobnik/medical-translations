@@ -1,4 +1,4 @@
-.anchorButton {
+.animatedButton {
   -moz-transform: skewX(-3deg);
   -o-transform: skewX(-3deg);
   -webkit-transform: skewX(-3deg);
@@ -8,8 +8,9 @@
   user-select: none;
   padding: 0.5em 1em;
   margin: 2em auto 0 auto;
-  display: inline-block; }
-  .anchorButton .insideOblique {
+  display: inline-block;
+  cursor: pointer; }
+  .animatedButton .insideOblique {
     display: block;
     width: 100%;
     -moz-transform: skewX(3deg);

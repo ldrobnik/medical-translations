@@ -10,9 +10,6 @@ import {OFFSET_DESKTOP} from '../../../data/constants';
 const AnchorButton = (props) => {
 
     return (
-        <div
-            className="anchorButtonWrapper"
-        >
             <AnchorLink
                 href={`#${props.target}`}
                 offset={OFFSET_DESKTOP}>
@@ -21,8 +18,6 @@ const AnchorButton = (props) => {
                     background={props.background}
                 />
             </AnchorLink>
-        </div>
-
     );
 };
 

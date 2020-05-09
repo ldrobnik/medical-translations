@@ -83,18 +83,17 @@ export const DataNotice = (props) => {
             <AnimatedContent
                 pose={noticeFadeIn ? 'visible' : 'hidden'}>
                 <div className="dataNotice">
-                    <div
-                        className="insideOblique"
-                    >
+                    <div className="insideOblique">
                         <div className="dataNoticeMessage">
                             {WEBSITE_TEXT[state.language].dataNotice.message}
                         </div>
-                        <AnimatedButton
-                            action={acceptDataNotice}
-                            background="light"
-                            message={WEBSITE_TEXT[state.language].dataNotice.button}
-                        >
-                        </AnimatedButton>
+                        <div>
+                            <AnimatedButton
+                                action={acceptDataNotice}
+                                background="light"
+                                message={WEBSITE_TEXT[state.language].dataNotice.button}
+                            />
+                        </div>
                     </div>
                 </div>
             </AnimatedContent>

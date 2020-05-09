@@ -4,14 +4,12 @@
   background-color: $themeColor;
   padding: 40px 20px 20px 30px;
   margin: 0 auto;
-  position: fixed;
+  position: fixed !important;
   bottom: 10px;
   left: 10%;
   width: 80%;
   text-align: center;
-  border: $lightColor 1px solid;
   @include obliqueBox(-3deg);
-
 
 
   @media all and (min-width: $mediumScr) {
@@ -32,5 +30,4 @@
 
 .dataNoticeMessage {
   color: $lightColor;
-  font-size: 1em;
 }

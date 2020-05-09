@@ -7,7 +7,7 @@ const AnimatedButton = (props) => {
 
     return (
         <div
-            className={`${props.background}BackgroundHoverable anchorButton`}
+            className={`${props.background}BackgroundHoverable animatedButton`}
             onClick={props.action}
         >
             <div

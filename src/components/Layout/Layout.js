@@ -6,6 +6,7 @@ import './Layout.css';
 
 import Spinner from '../UI/Spinner/Spinner';
 import NavigationBar from '../NavigationBar/NavigationBar';
+import DataNotice from "../UI/DataNotice/DataNotice";
 
 /* POSE */
 const AnimatedOverlay = posed.div({
