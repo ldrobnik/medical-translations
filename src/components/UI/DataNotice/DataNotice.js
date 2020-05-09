@@ -54,8 +54,6 @@ export const DataNotice = (props) => {
 
     const acceptDataNotice = () => {
 
-        //update Redux states
-
         //store info that the notice has been accepted
         setNoticeAsAccepted();
 
@@ -75,31 +73,28 @@ export const DataNotice = (props) => {
     };
 
 
-    //the content of notice to be displayed depending on the setNoticeVisible value
-    const notice = (props.noticeVisible && noticeVisible) ?
-        (<div className="dataNotice">
-            <AnimatedContent
-                pose={noticeFadeIn ? 'visible' : 'hidden'}>
-                <div className="dataNoticeMessage">
-                    {WEBSITE_TEXT.dataNotice[props.lang].message}
-                </div>
-                <AnimatedButton
-                    onClick={acceptDataNotice}
-                    background="light"
-                    message={WEBSITE_TEXT[state.language].dataNotice.message}
-                >
-                </AnimatedButton>
-            </AnimatedContent>
-        </div>) :
-        <div></div>;
-
     useEffect(() => {
+        console.log(state.dataNoticeVisible, noticeVisible);
         setTimeout(setContent, 2500);
     });
 
     return (
         <React.Fragment>
-            {(state.dataNoticeVisible && noticeVisible) && <div></div>
+            {(state.dataNoticeVisible && noticeVisible) &&
+            <div className="dataNotice">
+                <AnimatedContent
+                    pose={noticeFadeIn ? 'visible' : 'hidden'}>
+                    <div className="dataNoticeMessage">
+                        {WEBSITE_TEXT[state.language].dataNotice.message}
+                    </div>
+                    <AnimatedButton
+                        onClick={acceptDataNotice}
+                        background="light"
+                        message={WEBSITE_TEXT[state.language].dataNotice.button}
+                    >
+                    </AnimatedButton>
+                </AnimatedContent>
+            </div>
 
         }
         </React.Fragment>

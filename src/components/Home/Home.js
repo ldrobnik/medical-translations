@@ -9,6 +9,7 @@ import About from '../About/About';
 import Expertise from '../Expertise/Expertise';
 import Rates from '../Rates/Rates';
 import Contact from '../Contact/Contact';
+import DataNotice from '../UI/DataNotice/DataNotice';
 import * as actionTypes from "../../store/constants";
 import {WEBSITE_TEXT} from "../../data/constants";
 
@@ -102,6 +103,7 @@ const Home = () => {
                 <Expertise />
                 <Rates />
                 <Contact />
+                <DataNotice />
         </Layout>
     );
 };
