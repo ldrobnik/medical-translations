@@ -12,3 +12,12 @@ $themeBorder: $themeColor 1px solid;
 $lightBorder: $lightColor 1px solid;
 $themeThickBorder: $themeColor 3px solid;
 $lightThickBorder: $lightColor 3px solid;
+
+// *** BREAKPOINTS *** //
+
+//breakpoints
+$extraSmallScr: 480px;
+$smallScr: 736px;
+$mediumScr: '980px';
+$largeScr: '1280px';
+$extraLargeScr: '1690px';

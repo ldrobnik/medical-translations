@@ -3,6 +3,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './AnchorButton.css';
 
+import AnimatedButton from '../AnimatedButton/AnimatedButton';
+
 import {OFFSET_DESKTOP} from '../../../data/constants';
 
 const AnchorButton = (props) => {
@@ -14,14 +16,10 @@ const AnchorButton = (props) => {
             <AnchorLink
                 href={`#${props.target}`}
                 offset={OFFSET_DESKTOP}>
-                <div
-                    className={`${props.background}BackgroundHoverable anchorButton`}
-                >
-                    <div
-                        className="insideOblique">
-                        {props.message}
-                    </div>
-                </div>
+                <AnimatedButton
+                    message={props.message}
+                    background={props.background}
+                />
             </AnchorLink>
         </div>
 
