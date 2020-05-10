@@ -34,7 +34,7 @@ const TopBanner = (props) => {
             fluid
         className="verticallyCentered">
             <div className="bannerContent">
-                <Col md={{ span: 8, offset: 2 }} lg={{ span: 4, offset: 4 }}>
+                <Col sm={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} lg={{ span: 6, offset: 3 }} xl={{ span: 4, offset: 4 }}>
                     <TextBubble>
                         <img
                             src={logo}
