@@ -3,7 +3,8 @@
   -o-transform: skewX(-3deg);
   -webkit-transform: skewX(-3deg);
   background-color: #099dcd;
-  padding: 30px 20px; }
+  padding: 30px 20px;
+  text-align: center; }
   .textBubble .insideOblique {
     display: block;
     width: 100%;
