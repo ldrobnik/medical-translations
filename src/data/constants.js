@@ -372,11 +372,13 @@ export const WEBSITE_TEXT = {
 //Reusable posed component specifying the basic fade-in animation
 export const AnimatedBubble = posed.div({
     visible: {
-        height: '100%',
-        transform: 'skewX(0)'
+        transform: 'scale(1, 1)',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
     },
     hidden: {
-        height: '0',
-        transform: 'skewX(-25deg)'
+        transform: 'scale(1, 0)'
     }
 });
