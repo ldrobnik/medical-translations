@@ -40,8 +40,8 @@ const Expertise = (props) => {
                 id="expertise"
                 className="section themeBackground">
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
-                <Row className="bubbleWrapper">
-                    <Col sm={{span: 3, offset: 2}}>
+                <Row>
+                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
                         <AnimatedBubble
                             pose={topBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -52,7 +52,7 @@ const Expertise = (props) => {
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col sm={{span: 3, offset: 2}}>
+                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
                         <AnimatedBubble
                             pose={topBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -64,8 +64,8 @@ const Expertise = (props) => {
                         </AnimatedBubble>
                     </Col>
                 </Row>
-                <Row className="bubbleWrapper">
-                    <Col sm={{span: 3, offset: 2}}>
+                <Row>
+                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
                         <AnimatedBubble
                             pose={bottomBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -76,7 +76,7 @@ const Expertise = (props) => {
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col md={{span: 3, offset: 2}}>
+                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
                         <AnimatedBubble
                             pose={bottomBubblesVisible ? 'visible' : 'hidden'}
                         >

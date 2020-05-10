@@ -15,8 +15,8 @@ const Rates = (props) => {
     //global state
     const {state, dispatch} = useContext(store);
 
-    //specifies whether text bubble should be visible
-    const [bubbleVisible, setBubbleVisible] = useState(true);
+    //specifies whether text bubbles should be visible
+    const [bubblesVisible, setBubblesVisible] = useState(true);
 
     //change active section
     const setSection = () => {
@@ -37,6 +37,26 @@ const Rates = (props) => {
                 id="rates"
                 className="section lightBackground">
                 <h1>{WEBSITE_TEXT[state.language].rates.title}</h1>
+                <Row>
+                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
+                        <AnimatedBubble
+                            pose={bubblesVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble>
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
+                        <AnimatedBubble
+                            pose={bubblesVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble>
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                </Row>
             </div>
         </React.Fragment>
     );
