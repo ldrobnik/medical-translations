@@ -15,8 +15,11 @@ const Expertise = (props) => {
     //global state
     const {state, dispatch} = useContext(store);
 
-    //specifies whether text bubble should be visible
-    const [bubbleVisible, setBubbleVisible] = useState(false);
+    //specifies whether the top row of text bubbles should be visible
+    const [topBubblesVisible, setTopBubblesVisible] = useState(true);
+
+    //specifies whether the bottom row of text bubbles should be visible
+    const [bottomBubblesVisible, setBottomBubblesVisible] = useState(true);
 
     //change active section
     const setSection = () => {
@@ -37,6 +40,54 @@ const Expertise = (props) => {
                 id="expertise"
                 className="section themeBackground">
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
+                <Row className="bubbleWrapper">
+                    <Col sm={{span: 3, offset: 2}}>
+                        <AnimatedBubble
+                            pose={topBubblesVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble
+                                border="true"
+                            >
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                    <Col sm={{span: 3, offset: 2}}>
+                        <AnimatedBubble
+                            pose={topBubblesVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble
+                                border="true"
+                            >
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                </Row>
+                <Row className="bubbleWrapper">
+                    <Col sm={{span: 3, offset: 2}}>
+                        <AnimatedBubble
+                            pose={bottomBubblesVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble
+                                border="true"
+                            >
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                    <Col md={{span: 3, offset: 2}}>
+                        <AnimatedBubble
+                            pose={bottomBubblesVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble
+                                border="true"
+                            >
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                </Row>
             </div>
         </React.Fragment>
     );

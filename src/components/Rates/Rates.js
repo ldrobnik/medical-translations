@@ -16,7 +16,7 @@ const Rates = (props) => {
     const {state, dispatch} = useContext(store);
 
     //specifies whether text bubble should be visible
-    const [bubbleVisible, setBubbleVisible] = useState(false);
+    const [bubbleVisible, setBubbleVisible] = useState(true);
 
     //change active section
     const setSection = () => {

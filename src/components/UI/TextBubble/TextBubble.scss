@@ -3,6 +3,7 @@
 .textBubble {
   @include obliqueBox(-3deg);
   background-color: $themeColor;
+  color: $lightColor;
   padding: 30px 20px;
   text-align: center;
 }

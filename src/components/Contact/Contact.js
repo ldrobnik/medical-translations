@@ -16,8 +16,8 @@ const Contact = (props) => {
     //global state
     const {state, dispatch} = useContext(store);
 
-    //specifies whether text bubble should be visible
-    const [bubbleVisible, setBubbleVisible] = useState(true);
+    //specifies whether text bubbles should be visible
+    const [bubblesVisible, setBubblesVisible] = useState(true);
 
     //change active section
     const setSection = () => {
@@ -39,10 +39,9 @@ const Contact = (props) => {
                 className="section themeBackground">
                 <h1>{WEBSITE_TEXT[state.language].contact.title}</h1>
                 <Row className="bubbleWrapper">
-                    <Col sm={{span: 10, offset: 1}} md={{span: 8, offset: 2}} lg={{span: 6, offset: 3}}
-                         xl={{span: 4, offset: 4}}>
+                    <Col sm={{span: 6, offset: 3}} md={{span: 4, offset: 4}}>
                         <AnimatedBubble
-                            pose={bubbleVisible ? 'visible' : 'hidden'}
+                            pose={bubblesVisible ? 'visible' : 'hidden'}
                         >
                             <TextBubble
                                 border="true"
@@ -53,10 +52,9 @@ const Contact = (props) => {
                     </Col>
                 </Row>
                 <Row className="bubbleWrapper">
-                    <Col sm={{span: 10, offset: 1}} md={{span: 8, offset: 2}} lg={{span: 6, offset: 3}}
-                         xl={{span: 4, offset: 4}}>
+                    <Col sm={{span: 6, offset: 3}} md={{span: 4, offset: 4}}>
                         <AnimatedBubble
-                            pose={bubbleVisible ? 'visible' : 'hidden'}
+                            pose={bubblesVisible ? 'visible' : 'hidden'}
                         >
                             <TextBubble
                                 border="true"

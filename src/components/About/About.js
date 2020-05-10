@@ -18,7 +18,7 @@ const About = (props) => {
     const {state, dispatch} = useContext(store);
 
     //specifies whether text bubble should be visible
-    const [bubbleVisible, setBubbleVisible] = useState(false);
+    const [bubbleVisible, setBubbleVisible] = useState(true);
 
     //change active section
     const setSection = () => {
@@ -40,6 +40,18 @@ const About = (props) => {
                 id="about"
                 className="section lightBackground">
                 <h1>{WEBSITE_TEXT[state.language].about.title}</h1>
+                <Row className="bubbleWrapper">
+                    <Col md={{span: 10, offset: 1}} lg={{span: 8, offset: 2}}
+                         xl={{span: 6, offset: 3}}>
+                        <AnimatedBubble
+                            pose={bubbleVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble>
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                </Row>
             </div>
         </React.Fragment>
     );
