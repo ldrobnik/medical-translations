@@ -29,8 +29,14 @@ const TopBanner = (props) => {
 
 
     useEffect(() => {
-        setTimeout(() => setBubbleVisible(true), 1000);
-    }, []);
+        //display text bubble after a while
+        if (!state.pageLoaded) {
+            setBubbleVisible(false);
+        } else {
+            setTimeout(() => setBubbleVisible(true), 1000);
+        }
+    });
+
 
     return (
         <Jumbotron
