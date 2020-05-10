@@ -29,7 +29,7 @@ const TopBanner = (props) => {
 
 
     useEffect(() => {
-        //display text bubble after a while
+        //hide text bubble when page is reloading, then show it after a while
         if (!state.pageLoaded) {
             setBubbleVisible(false);
         } else {

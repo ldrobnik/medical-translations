@@ -50,7 +50,7 @@ a {
 
 .section {
   padding: 2em;
-  min-height: 1000px;
+  min-height: 600px;
 }
 
 
@@ -113,6 +113,10 @@ a {
 .sectionContent {
   padding: 3% 1% 5% 1%;
   overflow: hidden;
+}
+
+.bubbleWrapper {
+  padding: 2em 0;
 }
 
 //for vertically centered content

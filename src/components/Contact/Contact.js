@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from 'react';
+import React, {useEffect, useContext, useState} from 'react';
 import {Row, Col} from 'react-bootstrap';
 import {Waypoint} from "react-waypoint";
 import './Contact.css';
@@ -6,14 +6,18 @@ import './Contact.css';
 import AnchorButton from '../UI/AnchorButton/AnchorButton';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
+import {SECTION_NAMES, WEBSITE_TEXT, AnimatedBubble} from "../../data/constants";
 import {store} from "../../store/store";
 import * as actionTypes from "../../store/constants";
+import logo from "../../assets/images/logo.svg";
 
 const Contact = (props) => {
 
     //global state
     const {state, dispatch} = useContext(store);
+
+    //specifies whether text bubble should be visible
+    const [bubbleVisible, setBubbleVisible] = useState(true);
 
     //change active section
     const setSection = () => {
@@ -30,11 +34,39 @@ const Contact = (props) => {
             <Waypoint
                 onEnter={() => setSection()}
             />
-            <Row
+            <div
                 id="contact"
                 className="section themeBackground">
                 <h1>{WEBSITE_TEXT[state.language].contact.title}</h1>
-            </Row>
+                <Row className="bubbleWrapper">
+                    <Col sm={{span: 10, offset: 1}} md={{span: 8, offset: 2}} lg={{span: 6, offset: 3}}
+                         xl={{span: 4, offset: 4}}>
+                        <AnimatedBubble
+                            pose={bubbleVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble
+                                border="true"
+                            >
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                </Row>
+                <Row className="bubbleWrapper">
+                    <Col sm={{span: 10, offset: 1}} md={{span: 8, offset: 2}} lg={{span: 6, offset: 3}}
+                         xl={{span: 4, offset: 4}}>
+                        <AnimatedBubble
+                            pose={bubbleVisible ? 'visible' : 'hidden'}
+                        >
+                            <TextBubble
+                                border="true"
+                            >
+                                test
+                            </TextBubble>
+                        </AnimatedBubble>
+                    </Col>
+                </Row>
+            </div>
         </React.Fragment>
     );
 };
