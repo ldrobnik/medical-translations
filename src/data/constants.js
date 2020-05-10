@@ -1,4 +1,5 @@
 import React from 'react';
+import posed from 'react-pose';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
@@ -366,5 +367,16 @@ export const WEBSITE_TEXT = {
             }
         }
 
+    };
+
+//Reusable posed component specifying the basic fade-in animation
+export const AnimatedBubble = posed.div({
+    visible: {
+        height: '100%',
+        transform: 'skewX(0)'
+    },
+    hidden: {
+        height: '0',
+        transform: 'skewX(-25deg)'
     }
-;
+});
