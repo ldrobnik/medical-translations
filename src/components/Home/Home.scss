@@ -106,6 +106,10 @@ a {
   }
 }
 
+.withBorder {
+  border: $lightColor 2px solid;
+}
+
 .sectionContent {
   padding: 3% 1% 5% 1%;
   overflow: hidden;

@@ -85,6 +85,9 @@ a {
   .themeBackgroundHoverable:hover {
     background-color: #a7e6fb; }
 
+.withBorder {
+  border: #f5f5f5 2px solid; }
+
 .sectionContent {
   padding: 3% 1% 5% 1%;
   overflow: hidden; }
