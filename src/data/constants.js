@@ -66,12 +66,10 @@ export const WEBSITE_TEXT = {
             },
             about: {
                 title: SECTION_NAMES[0].name.en,
-                name: <React.Fragment>Łukasz Drobnik</React.Fragment>,
-                role: <React.Fragment>Medical translator</React.Fragment>,
-                body: <React.Fragment>I am an English to Polish translator specialising in medicine and pharmaceuticals.
+                body: <React.Fragment>I am an <strong>English to Polish translator specialising in medicine and pharmaceuticals</strong>.
                     With more than thirteen years of experience in the field, backed up by my background in life sciences
                     (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish
-                    audience by providing reliable translations of the highest quality.</React.Fragment>,
+                    audience by providing <strong>reliable translations of the highest quality</strong>.</React.Fragment>,
             altText: 'Łukasz Drobnik’s photo',
                 button: {
                     text: <React.Fragment>Contact me</React.Fragment>,
@@ -224,13 +222,11 @@ export const WEBSITE_TEXT = {
             },
             about: {
                 title: SECTION_NAMES[0].name.pl,
-                name: <React.Fragment>Łukasz Drobnik</React.Fragment>,
-                role: <React.Fragment>Tłumacz medyczny</React.Fragment>,
-                body: <React.Fragment>Jestem tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie
-                    i&nbsp;farmacji. Dzięki ponad trzynastoletniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem
+                body: <React.Fragment>Jestem <strong>tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie
+                    i&nbsp;farmacji</strong>. Dzięki ponad trzynastoletniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem
                     przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom
-                    w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając rzetelne tłumaczenia o&nbsp;najwyższej
-                    jakości.</React.Fragment>,
+                    w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając <strong>rzetelne tłumaczenia o&nbsp;najwyższej
+                        jakości</strong>.</React.Fragment>,
                 altText: 'Zdjęcie Łukasza Drobnika',
                 button: {
                     text: <React.Fragment>Napisz do mnie</React.Fragment>,

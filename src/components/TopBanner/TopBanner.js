@@ -55,14 +55,18 @@ const TopBanner = (props) => {
                                 width="150"
                                 height="150"
                             />
-                            <div className="title">{WEBSITE_TEXT[state.language].topBanner.title}</div>
-                            <div className="subtitle">{WEBSITE_TEXT[state.language].topBanner.subtitle}</div>
-                            <AnchorButton
-                                message={WEBSITE_TEXT[state.language].topBanner.button.text}
-                                target={WEBSITE_TEXT[state.language].topBanner.button.target}
-                                background="light"
-                                className="bannerButton"
-                            />
+                            <div className="subsection">
+                                <div className="title">{WEBSITE_TEXT[state.language].topBanner.title}</div>
+                                <div className="subtitle">{WEBSITE_TEXT[state.language].topBanner.subtitle}</div>
+                            </div>
+                            <div className="subsection">
+                                <AnchorButton
+                                    message={WEBSITE_TEXT[state.language].topBanner.button.text}
+                                    target={WEBSITE_TEXT[state.language].topBanner.button.target}
+                                    background="light"
+                                    className="bannerButton"
+                                />
+                            </div>
                         </TextBubble>
                     </AnimatedBubble>
                 </Col>

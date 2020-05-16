@@ -61,13 +61,23 @@ const About = (props) => {
                             pose={bubbleVisible ? 'visible' : 'hidden'}
                         >
                             <TextBubble>
-                                <div className="horizontallyCentered">
-                                <Portrait
-                                source={portrait}
-                                altText={WEBSITE_TEXT[state.language].about.altText}
-                                />
+                                <div className="horizontallyCentered subsection">
+                                    <Portrait
+                                        source={portrait}
+                                        altText={WEBSITE_TEXT[state.language].about.altText}
+                                    />
                                 </div>
-                                test
+                                <div className="subsection">
+                                    {WEBSITE_TEXT[state.language].about.body}
+                                </div>
+                                <div className="subsection">
+                                    <AnchorButton
+                                        message={WEBSITE_TEXT[state.language].about.button.text}
+                                        target={WEBSITE_TEXT[state.language].about.button.target}
+                                        background="light"
+                                        className="bannerButton"
+                                    />
+                                </div>
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
