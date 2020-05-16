@@ -33,7 +33,12 @@ const About = (props) => {
     //offset for triggering animation - larger for mobile
     const animationOffset = state.isMobile ? "450px" : "400px";
 
-
+    useEffect(() => {
+        //hide text bubble when page is reloading
+        if (!state.pageLoaded) {
+            setBubbleVisible(false);
+        }
+    });
     return (
         <React.Fragment>
             <Waypoint
