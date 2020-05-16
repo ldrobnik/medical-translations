@@ -141,29 +141,29 @@ export const WEBSITE_TEXT = {
                         {
                             name: <React.Fragment>Rate per word:</React.Fragment>,
                             price: [
-                                <React.Fragment>0.08&bnsp;EUR</React.Fragment>,
-                                <React.Fragment>0.04&bnsp;EUR</React.Fragment>
+                                <React.Fragment>0.08&nbsp;EUR</React.Fragment>,
+                                <React.Fragment>0.04&nbsp;EUR</React.Fragment>
                             ]
                         },
                         {
                             name: <React.Fragment>Rate per page (250&nbsp;words):</React.Fragment>,
                             price: [
-                                <React.Fragment>20&bnsp;EUR</React.Fragment>,
-                                <React.Fragment>10&bnsp;EUR</React.Fragment>
+                                <React.Fragment>20&nbsp;EUR</React.Fragment>,
+                                <React.Fragment>10&nbsp;EUR</React.Fragment>
                             ]
                         },
                         {
                             name: <React.Fragment>Hourly rate:</React.Fragment>,
                             price: [
-                                <React.Fragment>20&bnsp;EUR</React.Fragment>,
-                                <React.Fragment>20&bnsp;EUR</React.Fragment>
+                                <React.Fragment>20&nbsp;EUR</React.Fragment>,
+                                <React.Fragment>20&nbsp;EUR</React.Fragment>
                             ]
                         },
                         {
                             name: <React.Fragment>Minimum rate:</React.Fragment>,
                             price: [
-                                <React.Fragment>20&bnsp;EUR</React.Fragment>,
-                                <React.Fragment>20&bnsp;EUR</React.Fragment>
+                                <React.Fragment>20&nbsp;EUR</React.Fragment>,
+                                <React.Fragment>20&nbsp;EUR</React.Fragment>
                             ]
                         }
                     ]
@@ -293,29 +293,29 @@ export const WEBSITE_TEXT = {
                         {
                             name: <React.Fragment>Stawka za słowo:</React.Fragment>,
                             price: [
-                                <React.Fragment>0.32&bnsp;PLN</React.Fragment>,
-                                <React.Fragment>0.16&bnsp;PLN</React.Fragment>
+                                <React.Fragment>0.32&nbsp;PLN</React.Fragment>,
+                                <React.Fragment>0.16&nbsp;PLN</React.Fragment>
                             ]
                         },
                         {
                             name: <React.Fragment>Stawka za stronę (250&nbsp;słów):</React.Fragment>,
                             price: [
-                                <React.Fragment>80&bnsp;PLN</React.Fragment>,
-                                <React.Fragment>40&bnsp;PLN</React.Fragment>
+                                <React.Fragment>80&nbsp;PLN</React.Fragment>,
+                                <React.Fragment>40&nbsp;PLN</React.Fragment>
                             ]
                         },
                         {
                             name: <React.Fragment>Stawka godzinowa:</React.Fragment>,
                             price: [
-                                <React.Fragment>80&bnsp;PLN</React.Fragment>,
-                                <React.Fragment>80&bnsp;PLN</React.Fragment>
+                                <React.Fragment>80&nbsp;PLN</React.Fragment>,
+                                <React.Fragment>80&nbsp;PLN</React.Fragment>
                             ]
                         },
                         {
                             name: <React.Fragment>Stawka minimalna:</React.Fragment>,
                             price: [
-                                <React.Fragment>80&bnsp;PLN</React.Fragment>,
-                                <React.Fragment>80&bnsp;PLN</React.Fragment>
+                                <React.Fragment>80&nbsp;PLN</React.Fragment>,
+                                <React.Fragment>80&nbsp;PLN</React.Fragment>
                             ]
                         }
                     ]

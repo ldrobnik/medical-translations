@@ -61,7 +61,23 @@ const Rates = (props) => {
                             pose={bubble1Visible ? 'visible' : 'hidden'}
                         >
                             <TextBubble>
-                                test
+                                <div className="subsection">
+                                    <h3 className="slightlyPadded">
+                                        {WEBSITE_TEXT[state.language].rates.pricing.title[0]}
+                                    </h3>
+                                    <div className="slightlyPadded">
+                                        {WEBSITE_TEXT[state.language].rates.pricing.units.map((unit, k) => {
+                                            return (
+                                                <div
+                                                    className="pricingUnit"
+                                                    key={k}
+                                                >
+                                                    {unit.name} <span className="price">{unit.price[0]}</span>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
@@ -74,7 +90,23 @@ const Rates = (props) => {
                             pose={bubble2Visible ? 'visible' : 'hidden'}
                         >
                             <TextBubble>
-                                test
+                                <div className="subsection">
+                                    <h3 className="slightlyPadded">
+                                        {WEBSITE_TEXT[state.language].rates.pricing.title[1]}
+                                    </h3>
+                                    <div className="slightlyPadded">
+                                        {WEBSITE_TEXT[state.language].rates.pricing.units.map((unit, k) => {
+                                            return (
+                                                <div
+                                                    className="pricingUnit"
+                                                    key={k}
+                                                >
+                                                    {unit.name} <span className="price">{unit.price[1]}</span>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>

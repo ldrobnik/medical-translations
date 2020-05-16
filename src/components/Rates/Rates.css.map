@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,YAAa;EACX,OAAO,EAAE,OAAO;;AAGlB,MAAO;EACL,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,IAAI",
+"sources": ["Rates.scss"],
 "names": [],
 "file": "Rates.css"
 }
