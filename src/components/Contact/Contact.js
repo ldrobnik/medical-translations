@@ -3,15 +3,13 @@ import {Row, Col} from 'react-bootstrap';
 import {Waypoint} from "react-waypoint";
 import './Contact.css';
 
-import AnchorButton from '../UI/AnchorButton/AnchorButton';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
 import {SECTION_NAMES, WEBSITE_TEXT, AnimatedBubble} from "../../data/constants";
 import {store} from "../../store/store";
 import * as actionTypes from "../../store/constants";
-import logo from "../../assets/images/logo.svg";
 
-const Contact = (props) => {
+const Contact = () => {
 
     //global state
     const {state, dispatch} = useContext(store);
@@ -33,7 +31,7 @@ const Contact = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = state.isMobile ? "400px" : "350px";
+    const animationOffset = state.isMobile ? "330px" : "280px";
 
     useEffect(() => {
         //hide text bubbles when page is reloading
@@ -87,7 +85,27 @@ const Contact = (props) => {
                                 <TextBubble
                                     border="true"
                                 >
-                                    test
+                                    <div className="slightlyPadded">
+                                        {WEBSITE_TEXT[state.language].contact.links.text}
+                                    </div>
+                                    <div className="slightlyPadded">
+                                        {WEBSITE_TEXT[state.language].contact.links.links.map((link, k) => {
+                                            return (
+                                                <div
+                                                    className="contactLink"
+                                                    key={k}
+                                                >
+                                                    <a
+                                                        href={link.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        {link.text}
+                                                    </a>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
                                 </TextBubble>
                             </AnimatedBubble>
                         </Col>
