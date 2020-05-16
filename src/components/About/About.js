@@ -3,6 +3,7 @@ import {Row, Col} from 'react-bootstrap';
 import {store} from '../../store/store';
 import {Waypoint} from "react-waypoint";
 
+import portrait from '../../assets/images/portrait.jpg';
 import './About.css';
 
 import AnchorButton from '../UI/AnchorButton/AnchorButton';

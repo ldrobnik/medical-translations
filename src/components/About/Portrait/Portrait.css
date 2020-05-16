@@ -1,0 +1,10 @@
+.portraitWrapper {
+  width: 100%;
+  text-align: center;
+  z-index: 0; }
+
+.portrait {
+  max-height: 460px;
+  margin: 15px; }
+
+/*# sourceMappingURL=Portrait.css.map */
