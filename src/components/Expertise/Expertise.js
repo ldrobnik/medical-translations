@@ -42,7 +42,7 @@ const Expertise = (props) => {
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
                 <div className="bubbleWrapper">
                 <Row >
-                    <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={topBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -53,7 +53,7 @@ const Expertise = (props) => {
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={topBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -66,7 +66,7 @@ const Expertise = (props) => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={bottomBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -77,7 +77,7 @@ const Expertise = (props) => {
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={bottomBubblesVisible ? 'visible' : 'hidden'}
                         >

@@ -40,7 +40,7 @@ const Contact = (props) => {
                 <h1>{WEBSITE_TEXT[state.language].contact.title}</h1>
                 <div className="bubbleWrapper">
                     <Row className="bubbleSecondaryWrapper">
-                        <Col sm={{span: 6, offset: 3}} md={{span: 4, offset: 4}}>
+                        <Col md={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 4, offset: 4}}>
                             <AnimatedBubble
                                 pose={bubblesVisible ? 'visible' : 'hidden'}
                             >
@@ -53,7 +53,7 @@ const Contact = (props) => {
                         </Col>
                     </Row>
                     <Row className="bubbleSecondaryWrapper">
-                        <Col sm={{span: 6, offset: 3}} md={{span: 4, offset: 4}}>
+                        <Col md={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 4, offset: 4}}>
                             <AnimatedBubble
                                 pose={bubblesVisible ? 'visible' : 'hidden'}
                             >
