@@ -1,8 +1,11 @@
 .copyrightNote {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #099dcd;
   height: 100%;
-  padding: 1em 0;
+  padding: 2em 0 3em 0;
   text-align: center; }
+  .copyrightNote .secondary {
+    padding-top: 1em;
+    font-size: 0.7em; }
 
 /*# sourceMappingURL=CopyrightNote.css.map */

@@ -1,9 +1,14 @@
 @import '../../styles/common';
 
 .copyrightNote {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: $themeColor;
   height: 100%;
-  padding: 1em 0;
+  padding: 2em 0 3em 0;
   text-align: center;
+
+  .secondary {
+    padding-top: 1em;
+    font-size: 0.7em;
+  }
 }

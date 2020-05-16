@@ -198,10 +198,10 @@ export const WEBSITE_TEXT = {
                     ]
                 }
             },
-            copyrightNote: <div>
-                Portrait by Weronika Woźniak; background photo by Louisa Howard<br/>
-                &copy; 2020 Łukasz Drobnik
-            </div>,
+            copyrightNote: {
+                main: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>,
+                secondary: <React.Fragment>Portrait by Weronika Woźniak; background photo by Louisa Howard</React.Fragment>
+            },
             dataNotice: {
                 message: <div>This website collects basic information about user preferences (language selection).</div>,
                 button: 'I understand'
@@ -356,10 +356,10 @@ export const WEBSITE_TEXT = {
                     ]
                 }
             },
-            copyrightNote: <div>
-                Portret: Weronika Woźniak; zdjęcie w&nbsp;tle: Louisa Howard<br/>
-                &copy; 2020 Łukasz Drobnik
-            </div>,
+            copyrightNote: {
+                main: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>,
+                secondary: <React.Fragment>Portret: Weronika Woźniak; zdjęcie w&nbsp;tle: Louisa Howard</React.Fragment>
+            },
             dataNotice: {
                 message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór
                     języka).</div>,

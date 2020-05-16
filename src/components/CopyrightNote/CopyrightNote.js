@@ -13,7 +13,16 @@ const CopyrightNote = () => {
         <div
         className="section lightBackground copyrightNote"
         >
-                {WEBSITE_TEXT[state.language].copyrightNote}
+            <div
+            >
+                {WEBSITE_TEXT[state.language].copyrightNote.main}
+            </div>
+            <div
+                className="secondary"
+            >
+                {WEBSITE_TEXT[state.language].copyrightNote.secondary}
+            </div>
+
         </div>
     );
 };
