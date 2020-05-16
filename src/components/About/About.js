@@ -31,7 +31,7 @@ const About = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = state.isMobile ? "450px" : "400px";
+    const animationOffset = state.isMobile ? "350px" : "300px";
 
     useEffect(() => {
         //hide text bubble when page is reloading

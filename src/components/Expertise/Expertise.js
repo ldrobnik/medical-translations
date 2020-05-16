@@ -15,11 +15,17 @@ const Expertise = (props) => {
     //global state
     const {state, dispatch} = useContext(store);
 
-    //specifies whether the top row of text bubbles should be visible
-    const [topBubblesVisible, setTopBubblesVisible] = useState(false);
+    //specifies whether the first text bubble should be visible
+    const [bubble1Visible, setBubble1Visible] = useState(true);
 
-    //specifies whether the bottom row of text bubbles should be visible
-    const [bottomBubblesVisible, setBottomBubblesVisible] = useState(false);
+    //specifies whether the second text bubble should be visible
+    const [bubble2Visible, setBubble2Visible] = useState(true);
+
+    //specifies whether the third text bubble should be visible
+    const [bubble3Visible, setBubble3Visible] = useState(true);
+
+    //specifies whether the fourth text bubble should be visible
+    const [bubble4Visible, setBubble4Visible] = useState(true);
 
     //change active section
     const setSection = () => {
@@ -32,13 +38,15 @@ const Expertise = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = state.isMobile ? "450px" : "400px";
+    const animationOffset = state.isMobile ? "350px" : "300px";
 
     useEffect(() => {
         //hide text bubbles when page is reloading
         if (!state.pageLoaded) {
-            setTopBubblesVisible(false);
-            setBottomBubblesVisible(false);
+            setBubble1Visible(false);
+            setBubble2Visible(false);
+            setBubble3Visible(false);
+            setBubble4Visible(false);
         }
     });
 
@@ -53,13 +61,13 @@ const Expertise = (props) => {
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
                 <div className="bubbleWrapper">
                 <Row>
-                    <Waypoint
-                        onEnter={() => setTopBubblesVisible(true)}
-                        bottomOffset={animationOffset}
-                    />
                     <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                        <Waypoint
+                            onEnter={() => setBubble1Visible(true)}
+                            bottomOffset={animationOffset}
+                        />
                         <AnimatedBubble
-                            pose={topBubblesVisible ? 'visible' : 'hidden'}
+                            pose={bubble1Visible ? 'visible' : 'hidden'}
                         >
                             <TextBubble
                                 border="true"
@@ -69,8 +77,12 @@ const Expertise = (props) => {
                         </AnimatedBubble>
                     </Col>
                     <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                        <Waypoint
+                            onEnter={() => setBubble2Visible(true)}
+                            bottomOffset={animationOffset}
+                        />
                         <AnimatedBubble
-                            pose={topBubblesVisible ? 'visible' : 'hidden'}
+                            pose={bubble2Visible ? 'visible' : 'hidden'}
                         >
                             <TextBubble
                                 border="true"
@@ -81,13 +93,13 @@ const Expertise = (props) => {
                     </Col>
                 </Row>
                 <Row>
-                    <Waypoint
-                        onEnter={() => setBottomBubblesVisible(true)}
-                        bottomOffset={animationOffset}
-                    />
                     <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                        <Waypoint
+                            onEnter={() => setBubble3Visible(true)}
+                            bottomOffset={animationOffset}
+                        />
                         <AnimatedBubble
-                            pose={bottomBubblesVisible ? 'visible' : 'hidden'}
+                            pose={bubble3Visible ? 'visible' : 'hidden'}
                         >
                             <TextBubble
                                 border="true"
@@ -97,8 +109,12 @@ const Expertise = (props) => {
                         </AnimatedBubble>
                     </Col>
                     <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                        <Waypoint
+                            onEnter={() => setBubble4Visible(true)}
+                            bottomOffset={animationOffset}
+                        />
                         <AnimatedBubble
-                            pose={bottomBubblesVisible ? 'visible' : 'hidden'}
+                            pose={bubble4Visible ? 'visible' : 'hidden'}
                         >
                             <TextBubble
                                 border="true"
