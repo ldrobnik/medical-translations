@@ -94,6 +94,9 @@ a {
 .bubbleWrapper {
   padding: 8em 0; }
 
+.bubbleSecondaryWrapper {
+  padding: 4em 0; }
+
 .verticallyCentered {
   display: flex;
   flex-direction: column;

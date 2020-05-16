@@ -38,32 +38,34 @@ const Contact = (props) => {
                 id="contact"
                 className="section themeBackground">
                 <h1>{WEBSITE_TEXT[state.language].contact.title}</h1>
-                <Row className="bubbleWrapper">
-                    <Col sm={{span: 6, offset: 3}} md={{span: 4, offset: 4}}>
-                        <AnimatedBubble
-                            pose={bubblesVisible ? 'visible' : 'hidden'}
-                        >
-                            <TextBubble
-                                border="true"
+                <div className="bubbleWrapper">
+                    <Row className="bubbleSecondaryWrapper">
+                        <Col sm={{span: 6, offset: 3}} md={{span: 4, offset: 4}}>
+                            <AnimatedBubble
+                                pose={bubblesVisible ? 'visible' : 'hidden'}
                             >
-                                test
-                            </TextBubble>
-                        </AnimatedBubble>
-                    </Col>
-                </Row>
-                <Row className="bubbleWrapper">
-                    <Col sm={{span: 6, offset: 3}} md={{span: 4, offset: 4}}>
-                        <AnimatedBubble
-                            pose={bubblesVisible ? 'visible' : 'hidden'}
-                        >
-                            <TextBubble
-                                border="true"
+                                <TextBubble
+                                    border="true"
+                                >
+                                    test
+                                </TextBubble>
+                            </AnimatedBubble>
+                        </Col>
+                    </Row>
+                    <Row className="bubbleSecondaryWrapper">
+                        <Col sm={{span: 6, offset: 3}} md={{span: 4, offset: 4}}>
+                            <AnimatedBubble
+                                pose={bubblesVisible ? 'visible' : 'hidden'}
                             >
-                                test
-                            </TextBubble>
-                        </AnimatedBubble>
-                    </Col>
-                </Row>
+                                <TextBubble
+                                    border="true"
+                                >
+                                    test
+                                </TextBubble>
+                            </AnimatedBubble>
+                        </Col>
+                    </Row>
+                </div>
             </div>
         </React.Fragment>
     );

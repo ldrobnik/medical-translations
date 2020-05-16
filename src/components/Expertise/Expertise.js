@@ -40,8 +40,9 @@ const Expertise = (props) => {
                 id="expertise"
                 className="section themeBackground">
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
-                <Row>
-                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
+                <div className="bubbleWrapper">
+                <Row >
+                    <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={topBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -52,7 +53,7 @@ const Expertise = (props) => {
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
+                    <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={topBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -65,7 +66,7 @@ const Expertise = (props) => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
+                    <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={bottomBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -76,7 +77,7 @@ const Expertise = (props) => {
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col md={{span: 3, offset: 2}} className="bubbleWrapper">
+                    <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={bottomBubblesVisible ? 'visible' : 'hidden'}
                         >
@@ -88,6 +89,7 @@ const Expertise = (props) => {
                         </AnimatedBubble>
                     </Col>
                 </Row>
+                </div>
             </div>
         </React.Fragment>
     );
