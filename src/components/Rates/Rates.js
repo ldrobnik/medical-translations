@@ -28,6 +28,16 @@ const Rates = (props) => {
         );
     };
 
+    //offset for triggering animation - larger for mobile
+    const animationOffset = state.isMobile ? "450px" : "400px";
+
+    useEffect(() => {
+        //hide text bubbles when page is reloading
+        if (!state.pageLoaded) {
+            setBubblesVisible(false);
+        }
+    });
+
     return (
         <React.Fragment>
             <Waypoint
@@ -38,6 +48,10 @@ const Rates = (props) => {
                 className="section lightBackground">
                 <h1>{WEBSITE_TEXT[state.language].rates.title}</h1>
                 <Row className="bubbleWrapper">
+                    <Waypoint
+                        onEnter={() => setBubblesVisible(true)}
+                        bottomOffset={animationOffset}
+                    />
                     <Col md={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <AnimatedBubble
                             pose={bubblesVisible ? 'visible' : 'hidden'}
