@@ -33,7 +33,7 @@ const TopBanner = (props) => {
         if (!state.pageLoaded) {
             setBubbleVisible(false);
         } else {
-            setTimeout(() => setBubbleVisible(true), 1000);
+            setTimeout(() => setBubbleVisible(true), 600);
         }
     });
 
