@@ -18,7 +18,7 @@ const About = (props) => {
     const {state, dispatch} = useContext(store);
 
     //specifies whether text bubble should be visible
-    const [bubbleVisible, setBubbleVisible] = useState(true);
+    const [bubbleVisible, setBubbleVisible] = useState(false);
 
     //change active section
     const setSection = () => {
@@ -30,6 +30,9 @@ const About = (props) => {
         );
     };
 
+    //offset for triggering animation - larger for mobile
+    const animationOffset = state.isMobile ? "450px" : "400px";
+
 
     return (
         <React.Fragment>
@@ -40,6 +43,10 @@ const About = (props) => {
                 id="about"
                 className="section lightBackground">
                 <h1>{WEBSITE_TEXT[state.language].about.title}</h1>
+                <Waypoint
+                    onEnter={() => setBubbleVisible(true)}
+                    bottomOffset={animationOffset}
+                />
                 <Row className="bubbleWrapper">
                     <Col md={{span: 10, offset: 1}} lg={{span: 8, offset: 2}}
                          xl={{span: 6, offset: 3}}>
