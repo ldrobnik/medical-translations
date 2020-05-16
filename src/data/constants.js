@@ -134,8 +134,8 @@ export const WEBSITE_TEXT = {
                 title: SECTION_NAMES[2].name.en,
                 pricing: {
                     title: [
-                        'Translation',
-                        'Revision'
+                        'Translation:',
+                        'Revision:'
                     ],
                     units: [
                         {
@@ -286,8 +286,8 @@ export const WEBSITE_TEXT = {
                 title: SECTION_NAMES[2].name.pl,
                 pricing: {
                     title: [
-                        'Tłumaczenie',
-                        'Weryfikacja'
+                        'Tłumaczenie:',
+                        'Weryfikacja:'
                     ],
                     units: [
                         {
