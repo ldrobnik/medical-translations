@@ -1,10 +1,21 @@
 .portraitWrapper {
-  width: 100%;
-  text-align: center;
-  z-index: 0; }
+  height: 210px;
+  width: 180px;
+  overflow: hidden;
+  -moz-transform: skewX(-3deg);
+  -o-transform: skewX(-3deg);
+  -webkit-transform: skewX(-3deg); }
+  .portraitWrapper .insideOblique {
+    display: block;
+    width: 100%;
+    -moz-transform: skewX(3deg);
+    -o-transform: skewX(3deg);
+    -webkit-transform: skewX(3deg); }
 
 .portrait {
-  max-height: 460px;
-  margin: 15px; }
+  height: 100%;
+  position: relative;
+  left: -10%;
+  opacity: 0.8; }
 
 /*# sourceMappingURL=Portrait.css.map */

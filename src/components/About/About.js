@@ -6,6 +6,7 @@ import {Waypoint} from "react-waypoint";
 import portrait from '../../assets/images/portrait.jpg';
 import './About.css';
 
+import Portrait from './Portrait/Portrait';
 import AnchorButton from '../UI/AnchorButton/AnchorButton';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
@@ -60,6 +61,12 @@ const About = (props) => {
                             pose={bubbleVisible ? 'visible' : 'hidden'}
                         >
                             <TextBubble>
+                                <div className="horizontallyCentered">
+                                <Portrait
+                                source={portrait}
+                                altText={WEBSITE_TEXT[state.language].about.altText}
+                                />
+                                </div>
                                 test
                             </TextBubble>
                         </AnimatedBubble>

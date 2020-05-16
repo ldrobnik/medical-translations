@@ -72,6 +72,7 @@ export const WEBSITE_TEXT = {
                     With more than thirteen years of experience in the field, backed up by my background in life sciences
                     (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish
                     audience by providing reliable translations of the highest quality.</React.Fragment>,
+            altText: 'Łukasz Drobnik’s photo',
                 button: {
                     text: <React.Fragment>Contact me</React.Fragment>,
                     target: 'contact'
@@ -230,6 +231,7 @@ export const WEBSITE_TEXT = {
                     przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom
                     w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając rzetelne tłumaczenia o&nbsp;najwyższej
                     jakości.</React.Fragment>,
+                altText: 'Zdjęcie Łukasza Drobnika',
                 button: {
                     text: <React.Fragment>Napisz do mnie</React.Fragment>,
                     target: 'contact'

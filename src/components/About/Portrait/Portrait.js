@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import {Image} from 'react-bootstrap';
-
 import "./Portrait.css";
 
 
@@ -9,12 +7,15 @@ const Portrait = (props) => {
     return (
         <div
             className="portraitWrapper">
-            <Image
+            <div
+            className="insideOblique"
+            >
+            <img
                 src={props.source}
                 alt={props.altText}
                 className="portrait"
-                fluid
             />
+            </div>
         </div>
     );
 };

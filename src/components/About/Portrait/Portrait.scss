@@ -2,12 +2,15 @@
 
 
 .portraitWrapper {
-  width: 100%;
-  text-align: center;
-  z-index: 0;
+  height: 210px;
+  width: 180px;
+  overflow: hidden;
+  @include obliqueBox(-3deg);
 }
 
 .portrait {
-  max-height: 460px;
-  margin: 15px;
+  height: 100%;
+  position: relative;
+  left: -10%;
+  opacity: 0.8;
 }
