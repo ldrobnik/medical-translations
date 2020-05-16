@@ -7,4 +7,31 @@
   padding: 30px 20px;
   text-align: center;
   @include set-selection($lightColor, $themeColor);
+
+  a {
+    color: $lightColor;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+
+    &:link {
+      color: $lightColor;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: $lightColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: setColor(4) !important;
+      text-decoration: none !important;
+    }
+
+    &:active {
+      color: $lightColor;
+      text-decoration: none;
+    }
+  }
 }

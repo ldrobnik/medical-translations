@@ -18,5 +18,22 @@
   .textBubble ::selection {
     background: #f5f5f5;
     color: #099dcd; }
+  .textBubble a {
+    color: #f5f5f5;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s ease-in-out; }
+    .textBubble a:link {
+      color: #f5f5f5;
+      text-decoration: none; }
+    .textBubble a:visited {
+      color: #f5f5f5;
+      text-decoration: none; }
+    .textBubble a:hover {
+      color: #a7e6fb !important;
+      text-decoration: none !important; }
+    .textBubble a:active {
+      color: #f5f5f5;
+      text-decoration: none; }
 
 /*# sourceMappingURL=TextBubble.css.map */

@@ -65,7 +65,12 @@ const Contact = (props) => {
                                 <TextBubble
                                     border="true"
                                 >
-                                    test
+                                    <div className="slightlyPadded">
+                                        {WEBSITE_TEXT[state.language].contact.body}
+                                    </div>
+                                    <div className="slightlyPadded emailLink">
+                                        {WEBSITE_TEXT[state.language].contact.email}
+                                    </div>
                                 </TextBubble>
                             </AnimatedBubble>
                         </Col>
