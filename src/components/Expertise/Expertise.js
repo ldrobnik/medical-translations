@@ -61,7 +61,7 @@ const Expertise = (props) => {
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
                 <div className="bubbleWrapper">
                 <Row>
-                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
                         <Waypoint
                             onEnter={() => setBubble1Visible(true)}
                             bottomOffset={animationOffset}
@@ -72,11 +72,25 @@ const Expertise = (props) => {
                             <TextBubble
                                 border="true"
                             >
-                                test
+                                <h3 className="slightlyPadded">
+                                    {WEBSITE_TEXT[state.language].expertise.experience[0].title}
+                                </h3>
+                                <div className="slightlyPadded">
+                                    {WEBSITE_TEXT[state.language].expertise.experience[0].areas.map((area, k) => {
+                                        return (
+                                            <div
+                                                className="expertiseArea"
+                                                key={k}
+                                            >
+                                                {area}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
                         <Waypoint
                             onEnter={() => setBubble2Visible(true)}
                             bottomOffset={animationOffset}
@@ -87,13 +101,27 @@ const Expertise = (props) => {
                             <TextBubble
                                 border="true"
                             >
-                                test
+                                <h3 className="slightlyPadded">
+                                    {WEBSITE_TEXT[state.language].expertise.experience[1].title}
+                                </h3>
+                                <div className="slightlyPadded">
+                                    {WEBSITE_TEXT[state.language].expertise.experience[1].areas.map((area, k) => {
+                                        return (
+                                            <div
+                                                className="expertiseArea"
+                                                key={k}
+                                            >
+                                                {area}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
                 </Row>
                 <Row>
-                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
                         <Waypoint
                             onEnter={() => setBubble3Visible(true)}
                             bottomOffset={animationOffset}
@@ -104,11 +132,25 @@ const Expertise = (props) => {
                             <TextBubble
                                 border="true"
                             >
-                                test
+                                <h3 className="slightlyPadded">
+                                    {WEBSITE_TEXT[state.language].expertise.experience[2].title}
+                                </h3>
+                                <div className="slightlyPadded">
+                                    {WEBSITE_TEXT[state.language].expertise.experience[2].areas.map((area, k) => {
+                                        return (
+                                            <div
+                                                className="expertiseArea"
+                                                key={k}
+                                            >
+                                                {area}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
                         <Waypoint
                             onEnter={() => setBubble4Visible(true)}
                             bottomOffset={animationOffset}
@@ -119,7 +161,21 @@ const Expertise = (props) => {
                             <TextBubble
                                 border="true"
                             >
-                                test
+                                <h3 className="slightlyPadded">
+                                    {WEBSITE_TEXT[state.language].expertise.experience[3].title}
+                                </h3>
+                                <div className="slightlyPadded">
+                                    {WEBSITE_TEXT[state.language].expertise.experience[3].areas.map((area, k) => {
+                                        return (
+                                            <div
+                                                className="expertiseArea"
+                                                key={k}
+                                            >
+                                                {area}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>

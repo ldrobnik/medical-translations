@@ -69,7 +69,7 @@ export const WEBSITE_TEXT = {
                 body: <React.Fragment>I am an <strong>English to Polish translator specialising in medicine and pharmaceuticals</strong>.
                     With more than thirteen years of experience in the field, backed up by my background in life sciences
                     (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish
-                    audience by providing <strong>reliable translations of the highest quality</strong>.</React.Fragment>,
+                        audience by providing <strong>reliable translations of the highest quality</strong>.</React.Fragment>,
             altText: 'Łukasz Drobnik’s photo',
                 button: {
                     text: <React.Fragment>Contact me</React.Fragment>,
@@ -78,14 +78,9 @@ export const WEBSITE_TEXT = {
             },
             expertise: {
                 title: SECTION_NAMES[1].name.en,
-                body: <React.Fragment>Over the years I have spent as a full-time freelance translator, I have tackled
-                    hundreds of medical and pharmaceutical texts: from medical equipment manuals to scientific papers (on
-                    subjects ranging from microbiology to oncology), to clinical trial documentation, to medicinal product
-                    information. I approach every job as a new challenge, with the utmost attention to detail and thorough
-                    research.</React.Fragment>,
                 experience: [
                     {
-                        title: <React.Fragment>Clinical trials</React.Fragment>,
+                        title: <React.Fragment>Clinical trials:</React.Fragment>,
                         areas: [
                             <React.Fragment>informed consent forms</React.Fragment>,
                             <React.Fragment>protocols</React.Fragment>,
@@ -98,7 +93,7 @@ export const WEBSITE_TEXT = {
                     },
 
                     {
-                        title: <React.Fragment>Pharmaceuticals</React.Fragment>,
+                        title: <React.Fragment>Pharmaceuticals:</React.Fragment>,
                         areas: [
                             <React.Fragment>summaries of product characteristics</React.Fragment>,
                             <React.Fragment>patient leaflets</React.Fragment>,
@@ -108,7 +103,7 @@ export const WEBSITE_TEXT = {
                     },
 
                     {
-                        title: <React.Fragment>Medical devices</React.Fragment>,
+                        title: <React.Fragment>Medical devices:</React.Fragment>,
                         areas: [
                             <React.Fragment>instructions for use</React.Fragment>,
                             <React.Fragment>operating manuals</React.Fragment>,
@@ -119,7 +114,7 @@ export const WEBSITE_TEXT = {
                     },
 
                     {
-                        title: <React.Fragment>Other</React.Fragment>,
+                        title: <React.Fragment>Other:</React.Fragment>,
                         areas: [
                             <React.Fragment>scientific publications</React.Fragment>,
                             <React.Fragment>educational materials</React.Fragment>,
@@ -235,15 +230,9 @@ export const WEBSITE_TEXT = {
             },
             expertise: {
                 title: SECTION_NAMES[1].name.pl,
-                body: <React.Fragment>W&nbsp;ciągu wieloletniej, pełnowymiarowej pracy jako tłumacz freelancer zmierzyłem
-                    się z&nbsp;setkami tekstów z&nbsp;dziedzin medyny i&nbsp;farmacji: od instrukcji obsługi wyrobów
-                    medycznych przez artykuły naukowe (na różnorodne tematy - od mikrobiologii po onkologię), dokumentację
-                    badań klinicznych aż po druki informacyjne produktów leczniczych. Każde zlecenie traktuję jak nowe
-                    wyzwanie, pracując z&nbsp;najwyższą dbałością o&nbsp;szczegóły i&nbsp;rzetelnym zgłębieniem
-                    tematu.</React.Fragment>,
                 experience: [
                     {
-                        title: <React.Fragment>Badania kliniczne</React.Fragment>,
+                        title: <React.Fragment>Badania kliniczne:</React.Fragment>,
                         areas: [
                             <React.Fragment>formularze świadomej zgody</React.Fragment>,
                             <React.Fragment>protokoły</React.Fragment>,
@@ -256,7 +245,7 @@ export const WEBSITE_TEXT = {
                     },
 
                     {
-                        title: <React.Fragment>Farmaceutyki</React.Fragment>,
+                        title: <React.Fragment>Farmaceutyki:</React.Fragment>,
                         areas: [
                             <React.Fragment>charakterystyki produktów leczniczych</React.Fragment>,
                             <React.Fragment>ulotki dla pacjenta</React.Fragment>,
@@ -266,7 +255,7 @@ export const WEBSITE_TEXT = {
                     },
 
                     {
-                        title: <React.Fragment>Wyroby medyczne</React.Fragment>,
+                        title: <React.Fragment>Wyroby medyczne:</React.Fragment>,
                         areas: [
                             <React.Fragment>instrukcje użytkowania</React.Fragment>,
                             <React.Fragment>podręczniki obsługi</React.Fragment>,
@@ -277,7 +266,7 @@ export const WEBSITE_TEXT = {
                     },
 
                     {
-                        title: <React.Fragment>Inne</React.Fragment>,
+                        title: <React.Fragment>Inne:</React.Fragment>,
                         areas: [
                             <React.Fragment>publikacje naukowe</React.Fragment>,
                             <React.Fragment>materiały edukacyjne</React.Fragment>,
