@@ -17,7 +17,10 @@ const Contact = (props) => {
     const {state, dispatch} = useContext(store);
 
     //specifies whether text bubbles should be visible
-    const [bubblesVisible, setBubblesVisible] = useState(true);
+    const [topBubbleVisible, setTopBubbleVisible] = useState(false);
+
+    //specifies whether text bubbles should be visible
+    const [bottomBubbleVisible, setBottomBubbleVisible] = useState(false);
 
     //change active section
     const setSection = () => {
@@ -28,6 +31,17 @@ const Contact = (props) => {
             }
         );
     };
+
+    //offset for triggering animation - larger for mobile
+    const animationOffset = state.isMobile ? "400px" : "350px";
+
+    useEffect(() => {
+        //hide text bubbles when page is reloading
+        if (!state.pageLoaded) {
+            setTopBubbleVisible(false);
+            setBottomBubbleVisible(false);
+        }
+    });
 
     return (
         <React.Fragment>
@@ -40,9 +54,13 @@ const Contact = (props) => {
                 <h1>{WEBSITE_TEXT[state.language].contact.title}</h1>
                 <div className="bubbleWrapper">
                     <Row className="bubbleSecondaryWrapper">
+                        <Waypoint
+                            onEnter={() => setTopBubbleVisible(true)}
+                            bottomOffset={animationOffset}
+                        />
                         <Col md={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 4, offset: 4}}>
                             <AnimatedBubble
-                                pose={bubblesVisible ? 'visible' : 'hidden'}
+                                pose={topBubbleVisible ? 'visible' : 'hidden'}
                             >
                                 <TextBubble
                                     border="true"
@@ -53,9 +71,13 @@ const Contact = (props) => {
                         </Col>
                     </Row>
                     <Row className="bubbleSecondaryWrapper">
+                        <Waypoint
+                            onEnter={() => setBottomBubbleVisible(true)}
+                            bottomOffset={animationOffset}
+                        />
                         <Col md={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 4, offset: 4}}>
                             <AnimatedBubble
-                                pose={bubblesVisible ? 'visible' : 'hidden'}
+                                pose={bottomBubbleVisible ? 'visible' : 'hidden'}
                             >
                                 <TextBubble
                                     border="true"
