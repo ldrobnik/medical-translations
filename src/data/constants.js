@@ -146,7 +146,7 @@ export const WEBSITE_TEXT = {
                             ]
                         },
                         {
-                            name: <React.Fragment>Rate per page (250&nbsp;words):</React.Fragment>,
+                            name: <React.Fragment>Rate per page*:</React.Fragment>,
                             price: [
                                 <React.Fragment>20&nbsp;EUR</React.Fragment>,
                                 <React.Fragment>10&nbsp;EUR</React.Fragment>
@@ -166,7 +166,8 @@ export const WEBSITE_TEXT = {
                                 <React.Fragment>20&nbsp;EUR</React.Fragment>
                             ]
                         }
-                    ]
+                    ],
+                    footnote: <React.Fragment>*250&nbsp;words</React.Fragment>
                 },
                 button: {
                     text: SECTION_NAMES[3].name.en,
@@ -220,7 +221,7 @@ export const WEBSITE_TEXT = {
                 body: <React.Fragment>Jestem <strong>tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie
                     i&nbsp;farmacji</strong>. Dzięki ponad trzynastoletniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem
                     przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom
-                    w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając <strong>rzetelne tłumaczenia o&nbsp;najwyższej
+                    w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im <strong>rzetelne tłumaczenia o&nbsp;najwyższej
                         jakości</strong>.</React.Fragment>,
                 altText: 'Zdjęcie Łukasza Drobnika',
                 button: {
@@ -298,7 +299,7 @@ export const WEBSITE_TEXT = {
                             ]
                         },
                         {
-                            name: <React.Fragment>Stawka za stronę (250&nbsp;słów):</React.Fragment>,
+                            name: <React.Fragment>Stawka za stronę*:</React.Fragment>,
                             price: [
                                 <React.Fragment>80&nbsp;PLN</React.Fragment>,
                                 <React.Fragment>40&nbsp;PLN</React.Fragment>
@@ -318,7 +319,8 @@ export const WEBSITE_TEXT = {
                                 <React.Fragment>80&nbsp;PLN</React.Fragment>
                             ]
                         }
-                    ]
+                    ],
+                    footnote: <React.Fragment>*250&nbsp;słów</React.Fragment>
                 },
                 button: {
                     text: <React.Fragment>Napisz do mnie</React.Fragment>,
