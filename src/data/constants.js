@@ -1,13 +1,5 @@
 import React from 'react';
 import posed from 'react-pose';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {
-    faPhone,
-    faEnvelope,
-    faClock
-} from "@fortawesome/free-solid-svg-icons";
-
 
 //offset used for smooth scrolling
 export const OFFSET_DESKTOP = '60px';
