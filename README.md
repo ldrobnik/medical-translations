@@ -1,6 +1,6 @@
 # Medical translations
 
-A **React-based** website advertising my services as an [English to Polish medical translator](https://drobnik.biz/).
+A **React-based** [website](https://drobnik.biz/) advertising my services as an English to Polish medical translator.
 
 * [Main features](#main-features)
 * [Technicalities](#technicalities)
