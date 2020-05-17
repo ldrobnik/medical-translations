@@ -52,7 +52,7 @@ const Rates = (props) => {
                 className="section lightBackground">
                 <h1>{WEBSITE_TEXT[state.language].rates.title}</h1>
                 <Row className="bubbleWrapper">
-                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <Waypoint
                             onEnter={() => setBubble1Visible(true)}
                             bottomOffset={animationOffset}
@@ -81,7 +81,7 @@ const Rates = (props) => {
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
                         <Waypoint
                             onEnter={() => setBubble2Visible(true)}
                             bottomOffset={animationOffset}
