@@ -1,6 +1,6 @@
 # Medical translations
 
-A **React-based** website advertising my services as an English to Polish medical translator. You can find a demo [here](https://medical-translations.netlify.app/).
+A **React-based** website advertising my services as an [English to Polish medical translator](https://drobnik.biz/).
 
 * [Main features](#main-features)
 * [Technicalities](#technicalities)
