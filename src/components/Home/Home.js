@@ -84,8 +84,6 @@ const Home = () => {
         //checks local storage and updates the store accordingly
         checkLocalStorage();
 
-        setTimeout(setPageAsLoaded, 500);
-
         //update page title depending on the current language
         document.title=WEBSITE_TEXT[state.language].title;
     }, []);
