@@ -1,5 +1,6 @@
 .dataNotice {
   background-color: #099dcd;
+  border: 2px solid #f5f5f5;
   padding: 40px 20px 20px 30px;
   margin: 0 auto;
   position: fixed !important;
