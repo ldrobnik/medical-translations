@@ -61,7 +61,7 @@ const Expertise = (props) => {
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
                 <div className="bubbleWrapper">
                     <Row>
-                        <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
+                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
                             <Waypoint
                                 onEnter={() => setBubble1Visible(true)}
                                 bottomOffset={animationOffset}
@@ -90,7 +90,7 @@ const Expertise = (props) => {
                                 </TextBubble>
                             </AnimatedBubble>
                         </Col>
-                        <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
+                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
                             <Waypoint
                                 onEnter={() => setBubble2Visible(true)}
                                 bottomOffset={animationOffset}
@@ -121,7 +121,7 @@ const Expertise = (props) => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
+                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
                             <Waypoint
                                 onEnter={() => setBubble3Visible(true)}
                                 bottomOffset={animationOffset}
@@ -150,7 +150,7 @@ const Expertise = (props) => {
                                 </TextBubble>
                             </AnimatedBubble>
                         </Col>
-                        <Col xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
+                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
                             <Waypoint
                                 onEnter={() => setBubble4Visible(true)}
                                 bottomOffset={animationOffset}
