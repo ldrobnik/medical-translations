@@ -74,7 +74,10 @@ export const DataNotice = (props) => {
 
 
     useEffect(() => {
-        setTimeout(setContent, 2500);
+
+        if (state.pageLoaded) {
+            setTimeout(setContent, 2500);
+        }
     });
 
     return (
