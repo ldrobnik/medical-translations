@@ -59,7 +59,7 @@ export const WEBSITE_TEXT = {
             about: {
                 title: SECTION_NAMES[0].name.en,
                 body: <React.Fragment>I am an <strong>English to Polish translator specialising in medicine and pharmaceuticals</strong>.
-                    With more than thirteen years of experience in the field, backed up by my background in life sciences
+                    With more than 13 years of experience in the field, backed up by my background in life sciences
                     (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish
                         audience by providing <strong>reliable translations of the highest quality</strong>.</React.Fragment>,
             altText: 'Łukasz Drobnik’s photo',
@@ -211,7 +211,7 @@ export const WEBSITE_TEXT = {
             about: {
                 title: SECTION_NAMES[0].name.pl,
                 body: <React.Fragment>Jestem <strong>tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie
-                    i&nbsp;farmacji</strong>. Dzięki ponad trzynastoletniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem
+                    i&nbsp;farmacji</strong>. Dzięki ponad 13&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem
                     przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom
                     w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im <strong>rzetelne tłumaczenia o&nbsp;najwyższej
                         jakości</strong>.</React.Fragment>,
