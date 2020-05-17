@@ -31,7 +31,7 @@ const Contact = () => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = state.isMobile ? "330px" : "280px";
+    const animationOffset = state.isMobile ? "400px" : "280px";
 
     useEffect(() => {
         //hide text bubbles when page is reloading
