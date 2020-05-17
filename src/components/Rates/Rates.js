@@ -77,6 +77,9 @@ const Rates = (props) => {
                                             );
                                         })}
                                     </div>
+                                    <div className="slightlyPadded ratesFootnote">
+                                        {WEBSITE_TEXT[state.language].rates.pricing.footnote}
+                                    </div>
                                 </div>
                             </TextBubble>
                         </AnimatedBubble>
@@ -105,6 +108,9 @@ const Rates = (props) => {
                                                 </div>
                                             );
                                         })}
+                                    </div>
+                                    <div className="slightlyPadded ratesFootnote">
+                                        {WEBSITE_TEXT[state.language].rates.pricing.footnote}
                                     </div>
                                 </div>
                             </TextBubble>
