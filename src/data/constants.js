@@ -170,7 +170,7 @@ export const WEBSITE_TEXT = {
                 title: SECTION_NAMES[3].name.en,
                 body: <React.Fragment>If you need my help in translating a text or require linguistic support of any kind,
                     please do not hesitate to contact me at:</React.Fragment>,
-                email: <a href="mailto:lukasz@drobnik.biz">lukasz@drobnik.biz</a>,
+                email: <a href="mailto:lukasz_drobnik@outlook.com">lukasz_drobnik@outlook.com</a>,
                 links: {
                     text: <React.Fragment>You can also find me here:</React.Fragment>,
                     links: [
@@ -323,7 +323,7 @@ export const WEBSITE_TEXT = {
                 title: SECTION_NAMES[3].name.pl,
                 body: <React.Fragment>Jeśli potrzebujesz pomocy w&nbsp;tłumaczeniu tekstu lub innej usługi językowej, napisz
                     na adres:</React.Fragment>,
-                email: <a href="mailto:lukasz@drobnik.biz">lukasz@drobnik.biz</a>,
+                email: <a href="mailto:lukasz_drobnik@outlook.com">lukasz_drobnik@outlook.com</a>,
                 links: {
                     text: <React.Fragment>Można mnie znaleźć także tutaj:</React.Fragment>,
                     links: [
