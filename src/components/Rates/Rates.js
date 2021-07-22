@@ -1,16 +1,15 @@
 import React, {useEffect, useContext, useState} from 'react';
 import {Row, Col} from 'react-bootstrap';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 import './Rates.css';
 
-import AnchorButton from '../UI/AnchorButton/AnchorButton';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
-import {SECTION_NAMES, WEBSITE_TEXT, AnimatedBubble} from "../../data/constants";
-import {store} from "../../store/store";
-import * as actionTypes from "../../store/constants";
+import {SECTION_NAMES, WEBSITE_TEXT, AnimatedBubble} from '../../data/constants';
+import {store} from '../../store/store';
+import * as actionTypes from '../../store/constants';
 
-const Rates = (props) => {
+const Rates = () => {
 
     //global state
     const {state, dispatch} = useContext(store);
@@ -32,7 +31,7 @@ const Rates = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = state.isMobile ? "450px" : "300px";
+    const animationOffset = state.isMobile ? '450px' : '300px';
 
     useEffect(() => {
         //hide text bubbles when page is reloading
@@ -52,7 +51,8 @@ const Rates = (props) => {
                 className="section lightBackground">
                 <h1>{WEBSITE_TEXT[state.language].rates.title}</h1>
                 <Row className="bubbleWrapper">
-                    <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}}
+                         className="bubbleSecondaryWrapper">
                         <Waypoint
                             onEnter={() => setBubble1Visible(true)}
                             bottomOffset={animationOffset}
@@ -84,7 +84,8 @@ const Rates = (props) => {
                             </TextBubble>
                         </AnimatedBubble>
                     </Col>
-                    <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper">
+                    <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}}
+                         className="bubbleSecondaryWrapper">
                         <Waypoint
                             onEnter={() => setBubble2Visible(true)}
                             bottomOffset={animationOffset}

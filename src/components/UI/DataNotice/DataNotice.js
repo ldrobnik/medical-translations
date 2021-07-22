@@ -6,8 +6,8 @@ import './DataNotice.css';
 
 import AnimatedButton from '../AnimatedButton/AnimatedButton';
 
-import {WEBSITE_TEXT} from "../../../data/constants";
-import * as actionTypes from "../../../store/constants";
+import {WEBSITE_TEXT} from '../../../data/constants';
+import * as actionTypes from '../../../store/constants';
 
 /* ANIMATIONS */
 

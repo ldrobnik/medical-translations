@@ -6,12 +6,12 @@ import './TopBanner.css';
 import AnchorButton from '../UI/AnchorButton/AnchorButton';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
-import {WEBSITE_TEXT, AnimatedBubble} from "../../data/constants";
+import {WEBSITE_TEXT, AnimatedBubble} from '../../data/constants';
 import backdrop from '../../assets/images/background.jpg';
 import logo from '../../assets/images/logo.svg';
-import {store} from "../../store/store";
+import {store} from '../../store/store';
 
-const TopBanner = (props) => {
+const TopBanner = () => {
 
     //global state
     const {state, dispatch} = useContext(store);

@@ -11,8 +11,8 @@ import Rates from '../Rates/Rates';
 import Contact from '../Contact/Contact';
 import CopyrightNote from '../CopyrightNote/CopyrightNote';
 import DataNotice from '../UI/DataNotice/DataNotice';
-import * as actionTypes from "../../store/constants";
-import {WEBSITE_TEXT} from "../../data/constants";
+import * as actionTypes from '../../store/constants';
+import {WEBSITE_TEXT} from '../../data/constants';
 
 const Home = () => {
     //global state
@@ -20,22 +20,22 @@ const Home = () => {
 
     //sets page loading status to 'loaded'
     const setPageAsLoaded = () => {
-      dispatch(
-          {
-              type: actionTypes.SET_PAGE_LOADED,
-              pageLoaded: true
-          }
-      );
+        dispatch(
+            {
+                type: actionTypes.SET_PAGE_LOADED,
+                pageLoaded: true
+            }
+        );
     };
 
     //sets website language
     const setLanguage = (lang) => {
-      dispatch(
-          {
-              type: actionTypes.SET_LANGUAGE,
-              language: lang
-          }
-      );
+        dispatch(
+            {
+                type: actionTypes.SET_LANGUAGE,
+                language: lang
+            }
+        );
     };
 
     //stops displaying data notice
@@ -85,25 +85,25 @@ const Home = () => {
         checkLocalStorage();
 
         //update page title depending on the current language
-        document.title=WEBSITE_TEXT[state.language].title;
+        document.title = WEBSITE_TEXT[state.language].title;
     }, []);
 
     //update page title every time the current language changes
     useEffect(() => {
         //update page title depending on the current language
-        document.title=WEBSITE_TEXT[state.language].title;
+        document.title = WEBSITE_TEXT[state.language].title;
     }, [state.language]);
 
     return (
         <Layout>
-                <div id="top"></div>
-                <TopBanner />
-                <About />
-                <Expertise />
-                <Rates />
-                <Contact />
-                <CopyrightNote />
-                <DataNotice />
+            <div id="top"></div>
+            <TopBanner/>
+            <About/>
+            <Expertise/>
+            <Rates/>
+            <Contact/>
+            <CopyrightNote/>
+            <DataNotice/>
         </Layout>
     );
 };

@@ -1,6 +1,5 @@
-import React, {useContext} from "react";
-import {Container, Row} from "react-bootstrap";
-import {WEBSITE_TEXT} from "../../data/constants";
+import React, {useContext} from 'react';
+import {WEBSITE_TEXT} from '../../data/constants';
 import {store} from '../../store/store';
 import './CopyrightNote.css';
 
@@ -11,7 +10,7 @@ const CopyrightNote = () => {
 
     return (
         <div
-        className="section lightBackground copyrightNote"
+            className="section lightBackground copyrightNote"
         >
             <div
             >

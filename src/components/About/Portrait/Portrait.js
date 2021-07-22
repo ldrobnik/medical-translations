@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./Portrait.css";
+import './Portrait.css';
 
 
 const Portrait = (props) => {
@@ -8,13 +8,13 @@ const Portrait = (props) => {
         <div
             className="portraitWrapper">
             <div
-            className="insideOblique"
+                className="insideOblique"
             >
-            <img
-                src={props.source}
-                alt={props.altText}
-                className="portrait"
-            />
+                <img
+                    src={props.source}
+                    alt={props.altText}
+                    className="portrait"
+                />
             </div>
         </div>
     );

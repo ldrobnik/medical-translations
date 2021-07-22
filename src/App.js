@@ -10,9 +10,9 @@ ReactGA.initialize(ANALYTICS_KEY);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
-  return (
-    <Home />
-  );
+    return (
+        <Home/>
+    );
 };
 
 export default App;

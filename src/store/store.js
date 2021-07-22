@@ -42,8 +42,8 @@ const StateProvider = ({children}) => {
                 };
             case actionTypes.SET_DATA_NOTICE_ACCEPTED:
                 return {
-                  ...state,
-                  dataNoticeAccepted: action.dataNoticeAccepted
+                    ...state,
+                    dataNoticeAccepted: action.dataNoticeAccepted
                 };
             default:
                 throw new Error();

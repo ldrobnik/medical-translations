@@ -1,16 +1,15 @@
 import React, {useEffect, useContext, useState} from 'react';
 import {Row, Col} from 'react-bootstrap';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 import './Expertise.css';
 
-import AnchorButton from '../UI/AnchorButton/AnchorButton';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
-import {SECTION_NAMES, WEBSITE_TEXT, AnimatedBubble} from "../../data/constants";
-import {store} from "../../store/store";
-import * as actionTypes from "../../store/constants";
+import {SECTION_NAMES, WEBSITE_TEXT, AnimatedBubble} from '../../data/constants';
+import {store} from '../../store/store';
+import * as actionTypes from '../../store/constants';
 
-const Expertise = (props) => {
+const Expertise = () => {
 
     //global state
     const {state, dispatch} = useContext(store);
@@ -38,7 +37,7 @@ const Expertise = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = state.isMobile ? "450px" : "300px";
+    const animationOffset = state.isMobile ? '450px' : '300px';
 
     useEffect(() => {
         //hide text bubbles when page is reloading
@@ -61,7 +60,8 @@ const Expertise = (props) => {
                 <h1>{WEBSITE_TEXT[state.language].expertise.title}</h1>
                 <div className="bubbleWrapper">
                     <Row>
-                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
+                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}}
+                             className="bubbleSecondaryWrapper verticallyCentered">
                             <Waypoint
                                 onEnter={() => setBubble1Visible(true)}
                                 bottomOffset={animationOffset}
@@ -90,7 +90,8 @@ const Expertise = (props) => {
                                 </TextBubble>
                             </AnimatedBubble>
                         </Col>
-                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
+                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}}
+                             className="bubbleSecondaryWrapper verticallyCentered">
                             <Waypoint
                                 onEnter={() => setBubble2Visible(true)}
                                 bottomOffset={animationOffset}
@@ -121,7 +122,8 @@ const Expertise = (props) => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
+                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}}
+                             className="bubbleSecondaryWrapper verticallyCentered">
                             <Waypoint
                                 onEnter={() => setBubble3Visible(true)}
                                 bottomOffset={animationOffset}
@@ -150,7 +152,8 @@ const Expertise = (props) => {
                                 </TextBubble>
                             </AnimatedBubble>
                         </Col>
-                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}} className="bubbleSecondaryWrapper verticallyCentered">
+                        <Col sm={{span: 8, offset: 2}} lg={{span: 6, offset: 3}} xl={{span: 3, offset: 2}}
+                             className="bubbleSecondaryWrapper verticallyCentered">
                             <Waypoint
                                 onEnter={() => setBubble4Visible(true)}
                                 bottomOffset={animationOffset}

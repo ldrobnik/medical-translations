@@ -1,7 +1,7 @@
 import React, {useEffect, useContext, useState} from 'react';
 import {Row, Col} from 'react-bootstrap';
 import {store} from '../../store/store';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 
 import portrait from '../../assets/images/portrait.jpg';
 import './About.css';
@@ -10,8 +10,8 @@ import Portrait from './Portrait/Portrait';
 import AnchorButton from '../UI/AnchorButton/AnchorButton';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
-import {WEBSITE_TEXT, SECTION_NAMES, AnimatedBubble} from "../../data/constants";
-import * as actionTypes from "../../store/constants";
+import {WEBSITE_TEXT, SECTION_NAMES, AnimatedBubble} from '../../data/constants';
+import * as actionTypes from '../../store/constants';
 
 
 const About = (props) => {
@@ -33,7 +33,7 @@ const About = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = state.isMobile ? "350px" : "300px";
+    const animationOffset = state.isMobile ? '350px' : '300px';
 
     useEffect(() => {
         //hide text bubble when page is reloading

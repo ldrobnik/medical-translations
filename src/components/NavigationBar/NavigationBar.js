@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from 'react';
 import * as actionTypes from '../../store/constants';
-import {store} from "../../store/store";
+import {store} from '../../store/store';
 import {Navbar, Nav} from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import logo from '../../assets/images/logo-blue.svg';

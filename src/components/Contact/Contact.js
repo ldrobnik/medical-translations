@@ -1,13 +1,13 @@
 import React, {useEffect, useContext, useState} from 'react';
 import {Row, Col} from 'react-bootstrap';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 import './Contact.css';
 
 import TextBubble from '../UI/TextBubble/TextBubble';
 
-import {SECTION_NAMES, WEBSITE_TEXT, AnimatedBubble} from "../../data/constants";
-import {store} from "../../store/store";
-import * as actionTypes from "../../store/constants";
+import {SECTION_NAMES, WEBSITE_TEXT, AnimatedBubble} from '../../data/constants';
+import {store} from '../../store/store';
+import * as actionTypes from '../../store/constants';
 
 const Contact = () => {
 
@@ -31,7 +31,7 @@ const Contact = () => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = state.isMobile ? "400px" : "280px";
+    const animationOffset = state.isMobile ? '400px' : '280px';
 
     useEffect(() => {
         //hide text bubbles when page is reloading

@@ -6,7 +6,6 @@ import './Layout.css';
 
 import Spinner from '../UI/Spinner/Spinner';
 import NavigationBar from '../NavigationBar/NavigationBar';
-import DataNotice from "../UI/DataNotice/DataNotice";
 
 /* POSE */
 const AnimatedOverlay = posed.div({
@@ -27,18 +26,18 @@ const Layout = props => {
     const {state, dispatch} = useContext(store);
 
     //class applied to outer container to prevent scrolling before the page is loaded
-    const containerClass = (state.pageLoaded) ? "" : "constrained";
+    const containerClass = (state.pageLoaded) ? '' : 'constrained';
 
     return (
         <div className="contentWrapper">
             <div className={containerClass}>
-                {!state.pageLoaded && <Spinner />}
+                {!state.pageLoaded && <Spinner/>}
                 <PoseGroup>
                     {!state.pageLoaded && [
-                        <AnimatedOverlay key="overlay" className="overlay" />
+                        <AnimatedOverlay key="overlay" className="overlay"/>
                     ]}
                 </PoseGroup>
-                {state.pageLoaded && <NavigationBar />}
+                {state.pageLoaded && <NavigationBar/>}
                 {props.children}
             </div>
         </div>
