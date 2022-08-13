@@ -8,6 +8,15 @@ export const OFFSET_MOBILE = '280px';
 //breakpoint below which the navbar collapses
 export const MOBILE_BREAKPOINT = 768;
 
+//The year when Kasia's translation career started
+const activeSince = 2008;
+
+//Current year
+const currentYear = new Date().getFullYear();
+
+//Years Kasia has been translating
+const yearsActive = currentYear - activeSince;
+
 //section names
 export const SECTION_NAMES = [
     {
@@ -43,12 +52,12 @@ export const SECTION_NAMES = [
 //Text used on the website
 export const WEBSITE_TEXT = {
     en: {
-        title: 'Łukasz Drobnik - Polish medical translator',
+        title: 'Katarzyna Drobnik-Marszałkiewicz - Polish medical translator',
         navbar: {
             lang: 'PL'
         },
         topBanner: {
-            title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+            title: <React.Fragment>Katarzyna Drobnik-Marszałkiewicz,<br/><span className="degree">PhD</span></React.Fragment>,
             subtitle: <React.Fragment>English to Polish medical translations</React.Fragment>,
             button: {
                 text: 'Learn more',
@@ -58,12 +67,23 @@ export const WEBSITE_TEXT = {
         },
         about: {
             title: SECTION_NAMES[0].name.en,
-            body: <React.Fragment>I am an <strong>English to Polish translator specialising in medicine and
-                pharmaceuticals</strong>.
-                With more than 13 years of experience in the field, backed up by my background in life sciences
-                (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish
-                audience by providing <strong>reliable translations of the highest quality</strong>.</React.Fragment>,
-            altText: 'Łukasz Drobnik’s photo',
+            body:
+                <React.Fragment>
+                    <p>I’m an <strong>English-to-Polish translator specialising in medicine and pharmaceuticals</strong>.
+                        With {yearsActive} years of experience in the field, backed up by my background in life
+                        sciences, I
+                        can help you reach your Polish audience by providing reliable translations of the highest
+                        quality.
+                    </p>
+
+                    <p>In my work, I make extensive use of my education. I’m a holder of a <strong>master’s degree in
+                        biotechnology</strong> and a <strong>doctor’s degree in medical sciences</strong>. As part of my doctoral research, I studied
+                        correlation
+                        between changes in the <em>COX-2</em> gene and thyroid cancer.</p>
+
+                    <p>I look forward to hearing from you.</p>
+                </React.Fragment>,
+            altText: 'Katarzyna Drobnik-Marszałkiewicz’s photo',
             button: {
                 text: <React.Fragment>Contact me</React.Fragment>,
                 target: 'contact'
@@ -171,24 +191,14 @@ export const WEBSITE_TEXT = {
             title: SECTION_NAMES[3].name.en,
             body: <React.Fragment>If you need my help in translating a text or require linguistic support of any kind,
                 please do not hesitate to contact me at:</React.Fragment>,
-            email: <a href="mailto:lukasz_drobnik@outlook.com">lukasz_drobnik@outlook.com</a>,
-            links: {
-                text: <React.Fragment>You can also find me here:</React.Fragment>,
-                links: [
-                    {
-                        text: 'LinkedIn',
-                        url: 'https://www.linkedin.com/in/lukasz-drobnik/'
-                    },
-                    {
-                        text: 'Proz.com',
-                        url: 'http://www.proz.com/translator/735716'
-                    }
-                ]
+            email: <a href="mailto:k.drobnik.marszalkiewicz@gmail.com">k.drobnik.marszalkiewicz@gmail.com</a>,
+            callToAction: {
+                text: <React.Fragment>I’ll be happy to answer any questions you might have. Just drop me a line.</React.Fragment>
             }
         },
         copyrightNote: {
-            main: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>,
-            secondary: <React.Fragment>Portrait by Weronika Woźniak; background photo by Louisa Howard</React.Fragment>
+            main: <React.Fragment>&copy; 2022 Łukasz Drobnik</React.Fragment>,
+            secondary: <React.Fragment>Background photo by Louisa Howard</React.Fragment>
         },
         dataNotice: {
             message: <div>This website collects basic information about user preferences (language selection).</div>,
@@ -196,12 +206,12 @@ export const WEBSITE_TEXT = {
         }
     },
     pl: {
-        title: 'Łukasz Drobnik - tłumacz medyczny języka angielskiego',
+        title: 'Katarzyna Drobnik-Marszałkiewicz - tłumaczka medyczna języka angielskiego',
         navbar: {
             lang: 'EN'
         },
         topBanner: {
-            title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+            title: <React.Fragment><span className="degree">dr&nbsp;n.&nbsp;med.</span><br/>Katarzyna Drobnik-Marszałkiewicz</React.Fragment>,
             subtitle: <React.Fragment>Tłumaczenia medyczne z&nbsp;języka angielskiego</React.Fragment>,
             button: {
                 text: 'Dowiedz się więcej',
@@ -211,14 +221,16 @@ export const WEBSITE_TEXT = {
         },
         about: {
             title: SECTION_NAMES[0].name.pl,
-            body: <React.Fragment>Jestem <strong>tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie
-                i&nbsp;farmacji</strong>. Dzięki ponad 13&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu
-                wykształceniem
-                przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom
-                w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im <strong>rzetelne tłumaczenia
-                    o&nbsp;najwyższej
-                    jakości</strong>.</React.Fragment>,
-            altText: 'Zdjęcie Łukasza Drobnika',
+            body: <React.Fragment>
+                <p>Jestem tłumaczką <strong>języka angielskiego specjalizującą się w&nbsp;medycynie i&nbsp;farmacji</strong>. Dzięki {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem przyrodniczym, pomagam
+                    klientom w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im rzetelne tłumaczenia o&nbsp;najwyższej jakości.</p>
+
+                <p>W&nbsp;pracy często korzystam ze swojego wykształcenia. Mam tytuł <strong>magistra biotechnologii</strong> oraz <strong>doktora nauk medycznych</strong>. W&nbsp;ramach pracy doktorskiej badałam związek między zmianami
+                    w&nbsp;genie<em>COX-2</em> a&nbsp;rakiem tarczycy.</p>
+
+                <p>Zachęcam do kontaktu.</p>
+            </React.Fragment>,
+            altText: 'Zdjęcie Katarzyny Drobnik-Marszałkiewicz',
             button: {
                 text: <React.Fragment>Napisz do mnie</React.Fragment>,
                 target: 'contact'
@@ -326,24 +338,14 @@ export const WEBSITE_TEXT = {
             title: SECTION_NAMES[3].name.pl,
             body: <React.Fragment>Jeśli potrzebujesz pomocy w&nbsp;tłumaczeniu tekstu lub innej usługi językowej, napisz
                 na adres:</React.Fragment>,
-            email: <a href="mailto:lukasz_drobnik@outlook.com">lukasz_drobnik@outlook.com</a>,
-            links: {
-                text: <React.Fragment>Można mnie znaleźć także tutaj:</React.Fragment>,
-                links: [
-                    {
-                        text: 'LinkedIn',
-                        url: 'https://www.linkedin.com/in/lukasz-drobnik/'
-                    },
-                    {
-                        text: 'Proz.com',
-                        url: 'http://www.proz.com/translator/735716'
-                    }
-                ]
+            email: <a href="mailto:k.drobnik.marszalkiewicz@gmail.com">k.drobnik.marszalkiewicz@gmail.com</a>,
+            callToAction: {
+                text: <React.Fragment>Z&nbsp;chęcią odpowiem na wszelkie pytania. Po prostu napisz.</React.Fragment>
             }
         },
         copyrightNote: {
-            main: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>,
-            secondary: <React.Fragment>Portret: Weronika Woźniak; zdjęcie w&nbsp;tle: Louisa Howard</React.Fragment>
+            main: <React.Fragment>&copy; 2022 Łukasz Drobnik</React.Fragment>,
+            secondary: <React.Fragment>Zdjęcie w&nbsp;tle: Louisa Howard</React.Fragment>
         },
         dataNotice: {
             message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór

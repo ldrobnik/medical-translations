@@ -86,25 +86,7 @@ const Contact = () => {
                                     border="true"
                                 >
                                     <div className="slightlyPadded">
-                                        {WEBSITE_TEXT[state.language].contact.links.text}
-                                    </div>
-                                    <div className="slightlyPadded">
-                                        {WEBSITE_TEXT[state.language].contact.links.links.map((link, k) => {
-                                            return (
-                                                <div
-                                                    className="contactLink"
-                                                    key={k}
-                                                >
-                                                    <a
-                                                        href={link.url}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                    >
-                                                        {link.text}
-                                                    </a>
-                                                </div>
-                                            );
-                                        })}
+                                        {WEBSITE_TEXT[state.language].contact.callToAction.text}
                                     </div>
                                 </TextBubble>
                             </AnimatedBubble>
