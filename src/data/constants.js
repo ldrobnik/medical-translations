@@ -222,14 +222,16 @@ export const WEBSITE_TEXT = {
         },
         about: {
             title: SECTION_NAMES[0].name.pl,
-            body: <React.Fragment>Jestem <strong>tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie
-                i&nbsp;farmacji</strong>. Dzięki ponad {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży,
-                popartemu
-                wykształceniem
-                przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom
-                w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im <strong>rzetelne tłumaczenia
-                    o&nbsp;najwyższej
-                    jakości</strong>.</React.Fragment>,
+            body: <React.Fragment>
+                <p>Jestem tłumaczką <strong>języka angielskiego specjalizującą się w medycynie i farmacji</strong>. Dzięki {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem przyrodniczym, pomagam
+                    klientom w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im rzetelne tłumaczenia o&nbsp;najwyższej
+                    jakości.</p>
+
+                <p>W&nbsp;pracy często korzystam ze swojego wykształcenia. Mam tytuł <strong>magistra biotechnologii</strong> oraz <strong>doktora nauk medycznych</strong>. W&nbsp;ramach pracy doktorskiej badałam związek między zmianami
+                    w&nbsp;genie<em>COX-2</em> a&nbsp;rakiem tarczycy.</p>
+
+                <p>Zachęcam do kontaktu.</p>
+            </React.Fragment>,
             altText: 'Zdjęcie Katarzyny Drobnik',
             button: {
                 text: <React.Fragment>Napisz do mnie</React.Fragment>,
@@ -340,7 +342,7 @@ export const WEBSITE_TEXT = {
                 na adres:</React.Fragment>,
             email: <a href="mailto:k.drobnik@gmail.com">k.drobnik@gmail.com</a>,
             callToAction: {
-                text: <React.Fragment>Można mnie znaleźć także tutaj:</React.Fragment>
+                text: <React.Fragment>Z&nbsp;chęcią odpowiem na wszelkie pytania. Po prostu napisz.</React.Fragment>
             }
         },
         copyrightNote: {
