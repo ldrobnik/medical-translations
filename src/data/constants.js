@@ -222,11 +222,11 @@ export const WEBSITE_TEXT = {
         about: {
             title: SECTION_NAMES[0].name.pl,
             body: <React.Fragment>
-                <p>Jestem tłumaczką <strong>języka angielskiego specjalizującą się w&nbsp;medycynie i&nbsp;farmacji</strong>. Dzięki {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem przyrodniczym, pomagam
+                <p>Jestem <strong>tłumaczką języka angielskiego specjalizującą się w&nbsp;medycynie i&nbsp;farmacji</strong>. Dzięki {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem przyrodniczym, pomagam
                     klientom w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im rzetelne tłumaczenia o&nbsp;najwyższej jakości.</p>
 
-                <p>W&nbsp;pracy często korzystam ze swojego wykształcenia. Mam tytuł <strong>magistra biotechnologii</strong> oraz <strong>doktora nauk medycznych</strong>. W&nbsp;ramach pracy doktorskiej badałam związek między zmianami
-                    w&nbsp;genie<em>COX-2</em> a&nbsp;rakiem tarczycy.</p>
+                <p>Tłumacząc, często korzystam ze swojego wykształcenia. Mam tytuł <strong>magistra biotechnologii</strong> oraz <strong>doktora nauk medycznych</strong>. W&nbsp;ramach pracy doktorskiej badałam związek między zmianami
+                    w&nbsp;genie <em>COX-2</em> a&nbsp;rakiem tarczycy.</p>
 
                 <p>Zachęcam do kontaktu.</p>
             </React.Fragment>,
