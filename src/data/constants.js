@@ -67,11 +67,23 @@ export const WEBSITE_TEXT = {
         },
         about: {
             title: SECTION_NAMES[0].name.en,
-            body: <React.Fragment>I am an <strong>English to Polish translator specialising in medicine and
-                pharmaceuticals</strong>.
-                With more than {yearsActive} years of experience in the field, backed up by my background in life sciences
-                (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish
-                audience by providing <strong>reliable translations of the highest quality</strong>.</React.Fragment>,
+            body:
+                <React.Fragment>
+                    <p>I’m an <strong>English-to-Polish translator specialising in medicine and pharmaceuticals</strong>.
+                        With {yearsActive} years of experience in the field, backed up by my background in life
+                        sciences, I
+                        can help you reach your Polish audience by providing reliable translations of the highest
+                        quality.
+                    </p>
+
+                    <p>In my work, I make extensive use of my education. I’m a holder of a master’s degree in
+                        biotechnology
+                        and a doctor’s degree in medical sciences. As part of my doctoral research, I studied
+                        correlation
+                        between changes in the <em>COX-2</em> gene and thyroid cancer.</p>
+
+                    <p>I look forward to hearing from you.</p>
+                </React.Fragment>,
             altText: 'Katarzyna Drobnik-Marszałkiewicz’s photo',
             button: {
                 text: <React.Fragment>Contact me</React.Fragment>,
@@ -180,7 +192,7 @@ export const WEBSITE_TEXT = {
             title: SECTION_NAMES[3].name.en,
             body: <React.Fragment>If you need my help in translating a text or require linguistic support of any kind,
                 please do not hesitate to contact me at:</React.Fragment>,
-            email: <a href="mailto:lukasz_drobnik@outlook.com">lukasz_drobnik@outlook.com</a>,
+            email: <a href="mailto:k.drobnik.marszalkiewicz@gmail.com">k.drobnik.marszalkiewicz@gmail.com</a>,
             links: {
                 text: <React.Fragment>You can also find me here:</React.Fragment>,
                 links: [
@@ -221,7 +233,8 @@ export const WEBSITE_TEXT = {
         about: {
             title: SECTION_NAMES[0].name.pl,
             body: <React.Fragment>Jestem <strong>tłumaczem języka angielskiego specjalizującym się w&nbsp;medycynie
-                i&nbsp;farmacji</strong>. Dzięki ponad {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu
+                i&nbsp;farmacji</strong>. Dzięki ponad {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży,
+                popartemu
                 wykształceniem
                 przyrodniczym (magister biotechnologii) i&nbsp;podyplomowymi studiami tłumaczeniowymi, pomagam klientom
                 w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im <strong>rzetelne tłumaczenia
@@ -335,7 +348,7 @@ export const WEBSITE_TEXT = {
             title: SECTION_NAMES[3].name.pl,
             body: <React.Fragment>Jeśli potrzebujesz pomocy w&nbsp;tłumaczeniu tekstu lub innej usługi językowej, napisz
                 na adres:</React.Fragment>,
-            email: <a href="mailto:lukasz_drobnik@outlook.com">lukasz_drobnik@outlook.com</a>,
+            email: <a href="mailto:k.drobnik.marszalkiewicz@gmail.com">k.drobnik.marszalkiewicz@gmail.com</a>,
             links: {
                 text: <React.Fragment>Można mnie znaleźć także tutaj:</React.Fragment>,
                 links: [
