@@ -52,12 +52,12 @@ export const SECTION_NAMES = [
 //Text used on the website
 export const WEBSITE_TEXT = {
     en: {
-        title: 'Katarzyna Drobnik - Polish medical translator',
+        title: 'Katarzyna Drobnik-Marszałkiewicz - Polish medical translator',
         navbar: {
             lang: 'PL'
         },
         topBanner: {
-            title: <React.Fragment>Katarzyna Drobnik,<br/><span className="degree">PhD</span></React.Fragment>,
+            title: <React.Fragment>Katarzyna Drobnik-Marszałkiewicz,<br/><span className="degree">PhD</span></React.Fragment>,
             subtitle: <React.Fragment>English to Polish medical translations</React.Fragment>,
             button: {
                 text: 'Learn more',
@@ -77,14 +77,13 @@ export const WEBSITE_TEXT = {
                     </p>
 
                     <p>In my work, I make extensive use of my education. I’m a holder of a <strong>master’s degree in
-                        biotechnology</strong>
-                        and a <strong>doctor’s degree in medical sciences</strong>. As part of my doctoral research, I studied
+                        biotechnology</strong> and a <strong>doctor’s degree in medical sciences</strong>. As part of my doctoral research, I studied
                         correlation
                         between changes in the <em>COX-2</em> gene and thyroid cancer.</p>
 
                     <p>I look forward to hearing from you.</p>
                 </React.Fragment>,
-            altText: 'Katarzyna Drobnik’s photo',
+            altText: 'Katarzyna Drobnik-Marszałkiewicz’s photo',
             button: {
                 text: <React.Fragment>Contact me</React.Fragment>,
                 target: 'contact'
@@ -192,7 +191,7 @@ export const WEBSITE_TEXT = {
             title: SECTION_NAMES[3].name.en,
             body: <React.Fragment>If you need my help in translating a text or require linguistic support of any kind,
                 please do not hesitate to contact me at:</React.Fragment>,
-            email: <a href="mailto:k.drobnik@gmail.com">k.drobnik@gmail.com</a>,
+            email: <a href="mailto:k.drobnik.marszalkiewicz@gmail.com">k.drobnik.marszalkiewicz@gmail.com</a>,
             callToAction: {
                 text: <React.Fragment>I’ll be happy to answer any questions you might have. Just drop me a line.</React.Fragment>
             }
@@ -207,12 +206,12 @@ export const WEBSITE_TEXT = {
         }
     },
     pl: {
-        title: 'Katarzyna Drobnik - tłumaczka medyczna języka angielskiego',
+        title: 'Katarzyna Drobnik-Marszałkiewicz - tłumaczka medyczna języka angielskiego',
         navbar: {
             lang: 'EN'
         },
         topBanner: {
-            title: <React.Fragment><span className="degree">dr&nbsp;n.&nbsp;med.</span><br/>Katarzyna Drobnik</React.Fragment>,
+            title: <React.Fragment><span className="degree">dr&nbsp;n.&nbsp;med.</span><br/>Katarzyna Drobnik-Marszałkiewicz</React.Fragment>,
             subtitle: <React.Fragment>Tłumaczenia medyczne z&nbsp;języka angielskiego</React.Fragment>,
             button: {
                 text: 'Dowiedz się więcej',
@@ -223,16 +222,15 @@ export const WEBSITE_TEXT = {
         about: {
             title: SECTION_NAMES[0].name.pl,
             body: <React.Fragment>
-                <p>Jestem tłumaczką <strong>języka angielskiego specjalizującą się w medycynie i farmacji</strong>. Dzięki {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem przyrodniczym, pomagam
-                    klientom w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im rzetelne tłumaczenia o&nbsp;najwyższej
-                    jakości.</p>
+                <p>Jestem tłumaczką <strong>języka angielskiego specjalizującą się w&nbsp;medycynie i&nbsp;farmacji</strong>. Dzięki {yearsActive}&#x2011;letniemu doświadczeniu w&nbsp;branży, popartemu wykształceniem przyrodniczym, pomagam
+                    klientom w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im rzetelne tłumaczenia o&nbsp;najwyższej jakości.</p>
 
                 <p>W&nbsp;pracy często korzystam ze swojego wykształcenia. Mam tytuł <strong>magistra biotechnologii</strong> oraz <strong>doktora nauk medycznych</strong>. W&nbsp;ramach pracy doktorskiej badałam związek między zmianami
                     w&nbsp;genie<em>COX-2</em> a&nbsp;rakiem tarczycy.</p>
 
                 <p>Zachęcam do kontaktu.</p>
             </React.Fragment>,
-            altText: 'Zdjęcie Katarzyny Drobnik',
+            altText: 'Zdjęcie Katarzyny Drobnik-Marszałkiewicz',
             button: {
                 text: <React.Fragment>Napisz do mnie</React.Fragment>,
                 target: 'contact'
@@ -340,7 +338,7 @@ export const WEBSITE_TEXT = {
             title: SECTION_NAMES[3].name.pl,
             body: <React.Fragment>Jeśli potrzebujesz pomocy w&nbsp;tłumaczeniu tekstu lub innej usługi językowej, napisz
                 na adres:</React.Fragment>,
-            email: <a href="mailto:k.drobnik@gmail.com">k.drobnik@gmail.com</a>,
+            email: <a href="mailto:k.drobnik.marszalkiewicz@gmail.com">k.drobnik.marszalkiewicz@gmail.com</a>,
             callToAction: {
                 text: <React.Fragment>Z&nbsp;chęcią odpowiem na wszelkie pytania. Po prostu napisz.</React.Fragment>
             }
