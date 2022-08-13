@@ -52,12 +52,12 @@ export const SECTION_NAMES = [
 //Text used on the website
 export const WEBSITE_TEXT = {
     en: {
-        title: 'Łukasz Drobnik - Polish medical translator',
+        title: 'Katarzyna Drobnik-Marszałkiewicz - Polish medical translator',
         navbar: {
             lang: 'PL'
         },
         topBanner: {
-            title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+            title: <React.Fragment>Katarzyna Drobnik-Marszałkiewicz, PhD</React.Fragment>,
             subtitle: <React.Fragment>English to Polish medical translations</React.Fragment>,
             button: {
                 text: 'Learn more',
@@ -72,7 +72,7 @@ export const WEBSITE_TEXT = {
                 With more than {yearsActive} years of experience in the field, backed up by my background in life sciences
                 (MSc in biotechnology) and a postgraduate degree in translation, I can help you reach your Polish
                 audience by providing <strong>reliable translations of the highest quality</strong>.</React.Fragment>,
-            altText: 'Łukasz Drobnik’s photo',
+            altText: 'Katarzyna Drobnik-Marszałkiewicz’s photo',
             button: {
                 text: <React.Fragment>Contact me</React.Fragment>,
                 target: 'contact'
@@ -205,12 +205,12 @@ export const WEBSITE_TEXT = {
         }
     },
     pl: {
-        title: 'Łukasz Drobnik - tłumacz medyczny języka angielskiego',
+        title: 'Katarzyna Drobnik-Marszałkiewicz - tłumaczka medyczna języka angielskiego',
         navbar: {
             lang: 'EN'
         },
         topBanner: {
-            title: <React.Fragment>Łukasz Drobnik</React.Fragment>,
+            title: <React.Fragment>dr&nbsp;n.&nbsp;med. Katarzyna Drobnik-Marszałkiewicz</React.Fragment>,
             subtitle: <React.Fragment>Tłumaczenia medyczne z&nbsp;języka angielskiego</React.Fragment>,
             button: {
                 text: 'Dowiedz się więcej',
@@ -227,7 +227,7 @@ export const WEBSITE_TEXT = {
                 w&nbsp;dotarciu do polskojęzycznych odbiorców, dostarczając im <strong>rzetelne tłumaczenia
                     o&nbsp;najwyższej
                     jakości</strong>.</React.Fragment>,
-            altText: 'Zdjęcie Łukasza Drobnika',
+            altText: 'Zdjęcie Katarzyny Drobnik-Marszałkiewicz',
             button: {
                 text: <React.Fragment>Napisz do mnie</React.Fragment>,
                 target: 'contact'
