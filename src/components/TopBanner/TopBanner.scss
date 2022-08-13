@@ -24,12 +24,16 @@
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.8em;
+  line-height: 1em;
 }
 
+.degree {
+  font-size: 0.8em;
+}
 .subtitle {
-  font-size: 1.1em;
-  margin: 0.2em 0 0 0;
+  font-size: 1em;
+  margin: 0.5em 0 0 0;
 
   @media all and (max-width: 450px) {
     font-size: 1em;

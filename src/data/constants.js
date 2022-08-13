@@ -57,7 +57,7 @@ export const WEBSITE_TEXT = {
             lang: 'PL'
         },
         topBanner: {
-            title: <React.Fragment>Katarzyna Drobnik, PhD</React.Fragment>,
+            title: <React.Fragment>Katarzyna Drobnik,<br/><span className="degree">PhD</span></React.Fragment>,
             subtitle: <React.Fragment>English to Polish medical translations</React.Fragment>,
             button: {
                 text: 'Learn more',
@@ -212,7 +212,7 @@ export const WEBSITE_TEXT = {
             lang: 'EN'
         },
         topBanner: {
-            title: <React.Fragment>dr&nbsp;n.&nbsp;med. Katarzyna Drobnik</React.Fragment>,
+            title: <React.Fragment><span className="degree">dr&nbsp;n.&nbsp;med.</span><br/>Katarzyna Drobnik</React.Fragment>,
             subtitle: <React.Fragment>Tłumaczenia medyczne z&nbsp;języka angielskiego</React.Fragment>,
             button: {
                 text: 'Dowiedz się więcej',
