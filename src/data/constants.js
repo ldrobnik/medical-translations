@@ -58,7 +58,7 @@ export const WEBSITE_TEXT = {
         },
         topBanner: {
             title: <React.Fragment>Katarzyna Drobnik-Marszałkiewicz,<br/><span className="degree">PhD</span></React.Fragment>,
-            subtitle: <React.Fragment>English to Polish medical translations</React.Fragment>,
+            subtitle: <React.Fragment>English-to-Polish medical translations</React.Fragment>,
             button: {
                 text: 'Learn more',
                 target: 'about'
