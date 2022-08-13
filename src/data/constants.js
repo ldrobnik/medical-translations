@@ -187,8 +187,8 @@ export const WEBSITE_TEXT = {
             }
         },
         copyrightNote: {
-            main: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>,
-            secondary: <React.Fragment>Portrait by Weronika Woźniak; background photo by Louisa Howard</React.Fragment>
+            main: <React.Fragment>&copy; 2022 Łukasz Drobnik</React.Fragment>,
+            secondary: <React.Fragment>Background photo by Louisa Howard</React.Fragment>
         },
         dataNotice: {
             message: <div>This website collects basic information about user preferences (language selection).</div>,
@@ -342,8 +342,8 @@ export const WEBSITE_TEXT = {
             }
         },
         copyrightNote: {
-            main: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>,
-            secondary: <React.Fragment>Portret: Weronika Woźniak; zdjęcie w&nbsp;tle: Louisa Howard</React.Fragment>
+            main: <React.Fragment>&copy; 2022 Łukasz Drobnik</React.Fragment>,
+            secondary: <React.Fragment>Zdjęcie w&nbsp;tle: Louisa Howard</React.Fragment>
         },
         dataNotice: {
             message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór
