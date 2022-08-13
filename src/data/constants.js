@@ -76,9 +76,9 @@ export const WEBSITE_TEXT = {
                         quality.
                     </p>
 
-                    <p>In my work, I make extensive use of my education. I’m a holder of a master’s degree in
-                        biotechnology
-                        and a doctor’s degree in medical sciences. As part of my doctoral research, I studied
+                    <p>In my work, I make extensive use of my education. I’m a holder of a <strong>master’s degree in
+                        biotechnology</strong>
+                        and a <strong>doctor’s degree in medical sciences</strong>. As part of my doctoral research, I studied
                         correlation
                         between changes in the <em>COX-2</em> gene and thyroid cancer.</p>
 
@@ -193,18 +193,8 @@ export const WEBSITE_TEXT = {
             body: <React.Fragment>If you need my help in translating a text or require linguistic support of any kind,
                 please do not hesitate to contact me at:</React.Fragment>,
             email: <a href="mailto:k.drobnik.marszalkiewicz@gmail.com">k.drobnik.marszalkiewicz@gmail.com</a>,
-            links: {
-                text: <React.Fragment>You can also find me here:</React.Fragment>,
-                links: [
-                    {
-                        text: 'LinkedIn',
-                        url: 'https://www.linkedin.com/in/lukasz-drobnik/'
-                    },
-                    {
-                        text: 'Proz.com',
-                        url: 'http://www.proz.com/translator/735716'
-                    }
-                ]
+            callToAction: {
+                text: <React.Fragment>I’ll be happy to answer any questions you might have. Just drop me a line.</React.Fragment>
             }
         },
         copyrightNote: {
@@ -349,18 +339,8 @@ export const WEBSITE_TEXT = {
             body: <React.Fragment>Jeśli potrzebujesz pomocy w&nbsp;tłumaczeniu tekstu lub innej usługi językowej, napisz
                 na adres:</React.Fragment>,
             email: <a href="mailto:k.drobnik.marszalkiewicz@gmail.com">k.drobnik.marszalkiewicz@gmail.com</a>,
-            links: {
-                text: <React.Fragment>Można mnie znaleźć także tutaj:</React.Fragment>,
-                links: [
-                    {
-                        text: 'LinkedIn',
-                        url: 'https://www.linkedin.com/in/lukasz-drobnik/'
-                    },
-                    {
-                        text: 'Proz.com',
-                        url: 'http://www.proz.com/translator/735716'
-                    }
-                ]
+            callToAction: {
+                text: <React.Fragment>Można mnie znaleźć także tutaj:</React.Fragment>
             }
         },
         copyrightNote: {
