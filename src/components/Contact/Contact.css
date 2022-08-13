@@ -1,5 +1,11 @@
 .emailLink {
   font-size: 1.2em; }
+  @media all and (max-width: 450px) {
+    .emailLink {
+      font-size: 1em; } }
+  @media all and (max-width: 370px) {
+    .emailLink {
+      font-size: 0.8em; } }
 
 .contactLink {
   padding: 0.2em 0; }
