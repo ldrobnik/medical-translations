@@ -1,9 +1,10 @@
 # Medical translations
 
-A **React-based** [website](https://drobnik.biz/) advertising the services of Katarzyna Drobnik-Marszałkiewicz, an English to Polish medical translator.
+A **React-based** [website](https://drobnik.biz/) advertising the services of Katarzyna Drobnik, an English to Polish medical translator.
 
-* [Main features](#main-features)
-* [Technicalities](#technicalities)
+- [Medical translations](#medical-translations)
+  - [Main features](#main-features)
+  - [Technicalities](#technicalities)
 
 ## Main features
 
